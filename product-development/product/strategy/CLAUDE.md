@@ -11,4 +11,5 @@ Roadmaps, vision documents, business context, and strategic frameworks.
 | `business-context/` | Business metrics, JTBD, user personas, market context |
 | `business-context/finn-business-info.md` | FINN GmbH company overview, products, target market, goals |
 | `frameworks/` | Generic strategy frameworks for reference (7 Powers, JTBD canvas, growth loops, PLG, etc.) |
-| `okrs-t1-2026.md` | Remarketing domain OKRs for T1 2026 |
+| `okrs-t1-2026.md` | Remarketing domain OKRs for T1 2026 (Jan-Apr) |
+| `okrs-t2-2026.md` | Remarketing domain OKRs for T2 2026 (May-Aug) — includes full KPI tree and de-fleeting cycle targets |

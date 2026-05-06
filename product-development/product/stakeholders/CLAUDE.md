@@ -11,6 +11,7 @@ Key stakeholders for the FINN Remarketing domain. Each file covers working style
 | `stakeholder-iryna.md` | Iryna Lysenko — UX/UI Designer on Dealer/Buyer Portal |
 | `stakeholder-victor.md` | Victor — BI Manager, close collaborator on analytics and metrics |
 | `stakeholder-suppliers-oem.md` | Supplier / OEM stakeholder profile |
+| `stakeholder-davi.md` | Davi Lopes Mezencio — Backend Engineer, joined May 2026; onboarding context included |
 
 ## How to Use
 
