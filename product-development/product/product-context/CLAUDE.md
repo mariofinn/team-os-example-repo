@@ -10,6 +10,7 @@ Reference documentation on Forge Labs products and platforms that Forge integrat
 | File | Description |
 |------|-------------|
 | `forge-platform-overview.md` | Forge Labs platform structure, navigation, features, and integration points |
+| `supplier-portal-pricing.md` | Pricing concepts: normalized vs. all-in price, how they relate in the supplier portal UI |
 
 ---
 

@@ -7,9 +7,10 @@ Operational processes and how-to guides for Forge.
 
 ## Doc Index
 
-| File | Description |
+| File / Folder | Description |
 |------|-------------|
 | `customer-onboarding-checklist.md` | Step-by-step checklist for onboarding new Forge customers |
+| `writing-styles/` | Tone and format guidelines for different audiences (customer, executive, internal, technical) |
 
 ---
 

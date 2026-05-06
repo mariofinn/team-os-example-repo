@@ -33,9 +33,19 @@ Only named/managed accounts get folders. Self-serve customers are tracked throug
 | Account context, goals, risks | `accounts/{customer}/account-context.md` |
 | Call summaries | `accounts/{customer}/calls/summaries/` |
 | Call transcripts | `accounts/{customer}/calls/transcripts/` |
+| User research, pain points, discovery synthesis | `research/` |
 | Analytics (metrics, queries, schemas, dashboards) | `../../analytics/CLAUDE.md` (organized by product area, not by customer) |
 | Feature requests for a customer | Linear / Jira / Asana: filter by customer label |
 | Escalations | Linear / Jira / Asana: filter by `type:escalation` + customer label |
+
+## Research
+
+| File | Description |
+|------|-------------|
+| `research/supplier-pain-points.md` | Supplier pain points from discovery research |
+| `research/supplier-discovery-synthesis.md` | Synthesis of supplier discovery interviews |
+| `research/buyer-portal-context.md` | Buyer portal context and background |
+| `research/competitive-raas-platforms.md` | Competitive landscape for RaaS platforms |
 
 ## Processing Customer Calls
 
