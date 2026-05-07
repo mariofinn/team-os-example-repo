@@ -2,20 +2,20 @@
 
 ## Team
 
-| Function | Team Member | Email | Jira ID | Slack ID |
-|----------|-------------|-------|---------|----------|
-| Product Lead | Fabian Brossok | `fabian.brossok@finn.com` | TBD | TBD |
-| PM | Mario Schiefer | `mario.schiefer@finn.com` | TBD | TBD |
-| Engineering | Ana Costa | `ana.costa@finn.com` | TBD | TBD |
-| Engineering | Yahia Ragab | `yahia.ragab@finn.com` | TBD | TBD |
-| Engineering | Fabian Röckel | `fabian.roeckel@finn.com` | TBD | TBD |
-| Engineering | Marco Milovanovic | `marco.milovanovic@finn.com` | TBD | TBD |
-| Engineering | Davi Lopes Mezencio | `davi-lopes.mezencio@finn.com` | TBD | TBD |
-| Engineering | Mattes Wieben | `mattes.wieben@finn.com` | TBD | TBD |
-| Design | Iryna Lysenko | `TBD` | TBD | TBD |
-| BI | Victor Franz | `victor.franz@finn.com` | TBD | TBD |
-| Data Analyst | David Burgschwaiger | `david.burgschwaiger@finn.com` | TBD | TBD |
-| Sales Ops | Lucy Mueller | `lucy.mueller@finn.com` | TBD | TBD |
+| Function | Team Member | GitHub | Email | Jira ID | Slack ID |
+|----------|-------------|--------|-------|---------|----------|
+| Product Lead | Fabian Brossok | TBD | `fabian.brossok@finn.com` | TBD | TBD |
+| PM | Mario Schiefer | TBD | `mario.schiefer@finn.com` | TBD | TBD |
+| Engineering | Ana Costa | TBD | `ana.costa@finn.com` | TBD | TBD |
+| Engineering | Yahia Ragab | TBD | `yahia.ragab@finn.com` | TBD | TBD |
+| Engineering | Fabian Röckel | TBD | `fabian.roeckel@finn.com` | TBD | TBD |
+| Engineering | Marco Milovanovic | TBD | `marco.milovanovic@finn.com` | TBD | TBD |
+| Engineering | Davi Lopes Mezencio | TBD | `davi-lopes.mezencio@finn.com` | TBD | TBD |
+| Engineering | Mattes Wieben | TBD | `mattes.wieben@finn.com` | TBD | TBD |
+| Design | Iryna Lysenko | TBD | TBD | TBD | TBD |
+| BI | Victor Franz | TBD | `victor.franz@finn.com` | TBD | TBD |
+| Data Analyst | David Burgschwaiger | TBD | `david.burgschwaiger@finn.com` | TBD | TBD |
+| Sales Ops | Lucy Mueller | TBD | `lucy.mueller@finn.com` | TBD | TBD |
 
 ## Slack Channels
 
