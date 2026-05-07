@@ -4,18 +4,18 @@
 
 | Function | Team Member | GitHub | Email | Jira ID | Slack ID |
 |----------|-------------|--------|-------|---------|----------|
-| Product Lead | Fabian Brossok | TBD | `fabian.brossok@finn.com` | TBD | TBD |
-| PM | Mario Schiefer | TBD | `mario.schiefer@finn.com` | TBD | TBD |
-| Engineering | Ana Costa | TBD | `ana.costa@finn.com` | TBD | TBD |
-| Engineering | Yahia Ragab | TBD | `yahia.ragab@finn.com` | TBD | TBD |
-| Engineering | Fabian Röckel | TBD | `fabian.roeckel@finn.com` | TBD | TBD |
-| Engineering | Marco Milovanovic | TBD | `marco.milovanovic@finn.com` | TBD | TBD |
-| Engineering | Davi Lopes Mezencio | TBD | `davi-lopes.mezencio@finn.com` | TBD | TBD |
-| Engineering | Mattes Wieben | TBD | `mattes.wieben@finn.com` | TBD | TBD |
-| Design | Iryna Lysenko | TBD | TBD | TBD | TBD |
-| BI | Victor Franz | TBD | `victor.franz@finn.com` | TBD | TBD |
-| Data Analyst | David Burgschwaiger | TBD | `david.burgschwaiger@finn.com` | TBD | TBD |
-| Sales Ops | Lucy Mueller | TBD | `lucy.mueller@finn.com` | TBD | TBD |
+| Product Lead | Fabian Brossok | TBD | `fabian.brossok@finn.com` | TBD | `U02LXCYRUHL` |
+| PM | Mario Schiefer | `mariofinn` | `mario.schiefer@finn.com` | TBD | `U03PE94CKAM` |
+| VP Engineering | Mattes Wieben | `matteswieben` | `mattes.wieben@finn.com` | TBD | `U02EYGLE031` |
+| Engineering Manager | Marco Milovanovic | `mamilov` | `marco.milovanovic@finn.com` | TBD | `U03231YJRM1` |
+| Engineering | Ana Costa | `anacst` | `ana.costa@finn.com` | TBD | `U04PLDDE4AC` |
+| Engineering | Yahia Ragab | `ragabya` | `yahia.ragab@finn.com` | TBD | `U08KX86G1HV` |
+| Engineering (Automation & AI) | Fabian Röckel | `fabian-roeckel` | `fabian.roeckel@finn.com` | TBD | `U079BH0MYRY` |
+| Engineering | Davi Lopes Mezencio | `davi-lopesmezencio` | `davi-lopes.mezencio@finn.com` | TBD | `U0AU7NWADL1` |
+| Principal Designer | Iryna Lysenko | `irynalysenko-blip` | `iryna.lysenko@finn.com` | TBD | `U03DH841ZK8` |
+| Senior BI Manager | Victor Franz | `victorfranz13` | `victor.franz@finn.com` | TBD | `U03V44B2SVD` |
+| Staff Data Analyst | David Burgschwaiger | `david-burgschwaiger` | `david.burgschwaiger@finn.com` | TBD | `U07FDR83W6N` |
+| Intern (Strategy & BI) | Lucy Mueller | `lucymueller-REM` | `lucy.mueller@finn.com` | TBD | `U0A4JDKJL2D` |
 
 ## Slack Channels
 
