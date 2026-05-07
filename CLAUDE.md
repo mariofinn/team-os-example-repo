@@ -22,7 +22,8 @@
 
 | Channel | ID | Visibility | Purpose |
 |---------|-----|------------|---------|
-| TBD | TBD | TBD | TBD — add real FINN Slack channels here |
+| #rem_tech_general | `C0411H0129E` | Public | General REM tech team channel |
+| #rem_tech_internal | `C042UHRUG2U` | Private | Internal REM tech team discussions |
 
 ### DM Groups
 
