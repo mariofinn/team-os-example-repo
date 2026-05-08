@@ -17,6 +17,7 @@ Competitive intelligence for FINN Remarketing Tech — RaaS platforms, dealer au
 | CarOnSale | [`competitors/caronsale/`](competitors/caronsale/tldr.md) | Dealer trade-ins | Modern dealer-first auction stack | Different lane, but sets dealer UX bar |
 | Autorola | [`competitors/autorola/`](competitors/autorola/tldr.md) | OEM / fleet white-label | MarketPlace + INDICATA + Fleet Monitor | Most direct head-to-head for OEM RaaS deals (BMW pan-EU contract) |
 | SIXT CarHub | [`competitors/sixt-carhub/`](competitors/sixt-carhub/tldr.md) | Leasing / banks / insurers / OEMs | Consignment platform | Closest model match; brand-new (Nov 2025), serious entrant |
+| AUTOproff | [`competitors/autoproff/`](competitors/autoproff/tldr.md) | Dealers (primary) + leasing | Pan-EU dealer auction (AutoScout24-owned) | Already in MG's workflow today; AS24 distribution lift on the buyer side |
 
 ## Folder structure for new competitors
 
