@@ -1,10 +1,10 @@
 # RaaS Negotiation Flow — Bid Routing & Display Logic
 
-**Status:** Draft (confirm with Mario — Confluence shows "Documented Apr 27 / Updated Apr 30 2026, based on workshops Apr 24 + 29 + 30 2026")
+**Status:** In Review
 **Author:** Mario Schiefer
 **Pillar:** supplier
 **Last updated:** 2026-05-08 (Confluence v4 — 2026-05-05)
-**Related:** [Confluence source](https://finn.atlassian.net/wiki/spaces/FP/pages/4853661823/PRD+RaaS+Negotiation+Flow+Bid+Routing+Display+Logic) · Jira epic [TBD] · Figma [TBD]
+**Related:** [Confluence source](https://finn.atlassian.net/wiki/spaces/FP/pages/4853661823/PRD+RaaS+Negotiation+Flow+Bid+Routing+Display+Logic) · Jira epic [TBD]
 
 ---
 
