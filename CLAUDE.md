@@ -47,7 +47,7 @@
 | Sales enablement | `product-development/product/sales-enablement/CLAUDE.md` | Sales-facing docs and onboarding |
 | Stakeholders | `product-development/product/stakeholders/CLAUDE.md` | Key stakeholders — roles, working styles, communication preferences |
 | Processes | `product-development/product/processes/CLAUDE.md` | Operational processes and writing style guides |
-| Product context | `product-development/product/product-context/CLAUDE.md` | Reference docs for Forge systems and FINN product concepts |
+| Product context | `product-development/product/product-context/CLAUDE.md` | Reference docs for FINN Remarketing systems and product concepts |
 | Analytics | `product-development/analytics/CLAUDE.md` | Metrics glossary, data sources, common queries |
 | Engineering | `product-development/engineering/CLAUDE.md` | Engineering plans, RFCs, bug investigations |
 | Meetings | `product-development/product/meetings/CLAUDE.md` | Meeting docs, transcripts, summaries |
