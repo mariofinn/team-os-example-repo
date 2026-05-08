@@ -15,7 +15,3 @@ Every folder has its own `CLAUDE.md` describing what lives there. Read [CLAUDE.m
 ## Origin
 
 Originally built as a Team OS example for a fictional product called Forge by [Hannah Stulberg](https://hannahstulberg.substack.com/). Forked and adapted for the FINN Remarketing Tech team.
-
-## License
-
-Forked under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See [LICENSE](LICENSE) for details.
