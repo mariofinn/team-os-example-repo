@@ -1,6 +1,6 @@
 # Engineering
 
-Engineering plans, RFCs, and bug investigations for Forge. All organized by product area.
+Engineering plans, RFCs, and bug investigations for FINN Remarketing Tech. All organized by pillar.
 
 ## Folders
 
@@ -10,20 +10,26 @@ Engineering plans, RFCs, and bug investigations for Forge. All organized by prod
 | `rfcs/` | Technical design proposals and architecture decisions |
 | `bug-investigations/` | Dated investigation plans for production bugs |
 
-## Product Areas
+## Pillars
 
-All three folders share the same product-area structure:
+All three folders share the same pillar structure:
 
-| Product Area | Subfolder | What's Here |
+| Pillar | Subfolder | What's Here |
 |-------------|-----------|-------------|
-| Billing | `billing/` | Credit usage, referral tracking, seat management, credit bugs |
-| Deployment | `deployment/` | Custom domains, preview environments, SSL, deploy bugs |
-| Home Page | `home-page/` | Activity feed, project search, prompt suggestions |
-| Prototyping | `prototyping/` | Component library, real-time collab, version history |
-| Starter Templates | `starter-templates/` | Community marketplace, template customizer |
+| Supplier (RaaS) | `supplier/` | Supplier portal, pricing flows, OEM integration |
+| Buyer / Dealer | `buyer/` | Dealer portal, auction mechanics, deal flow, buyer KYC |
+| Operations | `operations/` | Compound ops (tyre, deregistration, refurb) + customer ops (PoA, transport, papers) |
 
 ## Naming Conventions
 
-- **Plans:** `{feature-name}.md` (e.g., `credit-usage-dashboard.md`)
-- **RFCs:** `{feature-name}-rfc.md` (e.g., `credit-usage-dashboard-rfc.md`)
-- **Bug investigations:** `bug-{date}-{description}/investigation-plan.md` (e.g., `bug-03-12-2026-credit-double-charge/investigation-plan.md`)
+- **Plans:** `{feature-name}.md` (e.g., `dealer-bidding-flow.md`)
+- **RFCs:** `{feature-name}-rfc.md` (e.g., `dealer-bidding-flow-rfc.md`)
+- **Bug investigations:** `bug-{YYYY-MM-DD}-{short-description}/investigation-plan.md` (e.g., `bug-2026-05-08-supplier-export-stuck/investigation-plan.md`)
+
+## Where the work is tracked
+
+| System | Use |
+|--------|-----|
+| Jira `FRT` project | Tickets, sprints, roadmap surface (board 245) |
+| GitHub `finn-auto` org | Code, PRs, code review |
+| This repo | Plans, RFCs, investigations — the durable design artefacts |

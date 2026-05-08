@@ -1,12 +1,13 @@
 # Design
 
-Design documentation for Forge. Design artifacts primarily live in Figma.
+Design documentation for FINN Remarketing Tech. Design artifacts primarily live in Figma.
 
 ## Where to Find Design Assets
 
 | Asset | Location |
 |-------|----------|
-| Design files and prototypes | Figma (`Forge Labs` workspace) |
+| Design files and prototypes | Figma (FINN workspace) |
 | PRDs (feature specs with design context) | [product/PRDs/](../product/PRDs/CLAUDE.md) |
+| Design lead | Iryna Lysenko — [stakeholder profile](../product/stakeholders/stakeholder-iryna.md) |
 
-This folder will hold design documentation that benefits from version control (design system changelogs, design decision records, accessibility audits).
+This folder holds design documentation that benefits from version control: design system changelogs, design decision records, accessibility audits, and any user-research outputs that aren't already filed under `product/customers/research/`.

@@ -1,56 +1,59 @@
 # Customer Insights
 
-Customer feedback, account context, and call notes for Forge's named accounts.
+Customer feedback, account context, and call notes for FINN Remarketing's named buyer and supplier accounts.
 
-## Segments
+## Account Types
 
-| Segment | Description |
-|---------|-------------|
-| Enterprise | Managed accounts with complex needs (SSO, compliance, dedicated support) |
-| Growth | Mid-market accounts with expansion potential |
-| Self-serve | Long-tail, no individual account management |
+| Type | Folder | Who they are |
+|------|--------|--------------|
+| Buyers | `accounts/buyers/` | B2B trade buyers — independent dealers, dealer groups, trade buyers purchasing cars from FINN |
+| Suppliers | `accounts/suppliers/` | OEMs and leasing partners using FINN's remarketing capability as a service (RaaS) |
 
-Only named/managed accounts get folders. Self-serve customers are tracked through aggregate analytics.
+Self-serve / long-tail accounts are tracked through aggregate analytics in HubSpot and BigQuery, not in this repo.
 
 ## Named Accounts
 
-| Account | Segment | Folder |
-|---------|---------|--------|
-| Acme Corp | Growth | [accounts/acme-corp/](accounts/acme-corp/CLAUDE.md) |
-| Meridian Health | Enterprise | [accounts/meridian-health/](accounts/meridian-health/CLAUDE.md) |
-| Crestview Financial | Enterprise | [accounts/crestview-financial/](accounts/crestview-financial/CLAUDE.md) |
-| Stackline | Growth | [accounts/stackline/](accounts/stackline/CLAUDE.md) |
-| Axiom Logistics | Enterprise | [accounts/axiom-logistics/](accounts/axiom-logistics/CLAUDE.md) |
-| Helix Robotics | Growth | [accounts/helix-robotics/](accounts/helix-robotics/CLAUDE.md) |
-| Volta Energy | Growth | [accounts/volta-energy/](accounts/volta-energy/CLAUDE.md) |
-| NovaBridge | Growth | [accounts/novabridge/](accounts/novabridge/CLAUDE.md) |
-| Pinnacle Media | Growth | [accounts/pinnacle-media/](accounts/pinnacle-media/CLAUDE.md) |
+### Suppliers (in flight)
+
+| Account | Folder | Status |
+|---------|--------|--------|
+| Nissan | [accounts/suppliers/nissan/](accounts/suppliers/nissan/) | RaaS discovery / pilot prep |
+| Renault | [accounts/suppliers/renault/](accounts/suppliers/renault/) | RaaS discovery |
+| MG | [accounts/suppliers/mg/](accounts/suppliers/mg/) | RaaS discovery |
+
+Source: `research/supplier-discovery-synthesis.md` (4 interviews — Nissan x2, Renault x1, MG x1).
+
+### Buyers
+
+To be backfilled from December 2025 buyer call notes.
 
 ## Finding Customer Data
 
 | Looking for... | Where to find it |
 |----------------|-----------------|
-| Account context, goals, risks | `accounts/{customer}/account-context.md` |
-| Call summaries | `accounts/{customer}/calls/summaries/` |
-| Call transcripts | `accounts/{customer}/calls/transcripts/` |
-| User research, pain points, discovery synthesis | `research/` |
-| Analytics (metrics, queries, schemas, dashboards) | `../../analytics/CLAUDE.md` (organized by product area, not by customer) |
-| Feature requests for a customer | Linear / Jira / Asana: filter by customer label |
-| Escalations | Linear / Jira / Asana: filter by `type:escalation` + customer label |
+| Account context, goals, risks | `accounts/{type}/{account}/account-context.md` |
+| Call summaries | `accounts/{type}/{account}/calls/summaries/` |
+| Call transcripts | `accounts/{type}/{account}/calls/transcripts/` |
+| Cross-account research, pain points, discovery synthesis | `research/` |
+| Pipeline / deal stage / contacts | HubSpot |
+| Tickets and feature requests | Jira `FRT` project, filter by customer label |
+| Aggregate analytics | `../../analytics/` (organized by pillar, not by customer) |
 
 ## Research
 
 | File | Description |
 |------|-------------|
-| `research/supplier-pain-points.md` | Supplier pain points from discovery research |
+| `research/supplier-pain-points.md` | Cross-supplier pain points synthesis (Nissan x2, Renault x1, MG x1) |
 | `research/supplier-discovery-synthesis.md` | Synthesis of supplier discovery interviews |
-| `research/buyer-portal-context.md` | Buyer portal context and background |
+| `research/buyer-portal-context.md` | Buyer portal product context — Dealer Portal Refactoring (Retool → Pro-Code) |
 | `research/competitive-raas-platforms.md` | Competitive landscape for RaaS platforms |
 
 ## Processing Customer Calls
 
-When processing a new customer call:
-1. Save summary to `accounts/{customer}/calls/summaries/{date}.md`
-2. Save transcript to `accounts/{customer}/calls/transcripts/{date}.md`
-3. Update `accounts/{customer}/account-context.md` with new insights
-4. Log feature requests in Linear / Jira / Asana with the customer label
+When processing a new customer call (use the `/customer-call` slash command):
+
+1. Identify whether this is a buyer or supplier
+2. Save summary to `accounts/{type}/{account}/calls/summaries/{YYYY-MM-DD}.md`
+3. Save transcript to `accounts/{type}/{account}/calls/transcripts/{YYYY-MM-DD}.md`
+4. Update `accounts/{type}/{account}/account-context.md` with new insights, blockers, action items
+5. Log feature requests in Jira `FRT` with the appropriate customer label

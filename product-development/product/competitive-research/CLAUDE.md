@@ -1,47 +1,36 @@
 # Competitive Research
 
-Competitive intelligence for Forge — tracking competitors, feature comparisons, and market positioning.
+Competitive intelligence for FINN Remarketing Tech — tracking RaaS platforms, dealer auction tools, and other vehicle remarketing competitors.
 
-## Competitors
+## Where to start
 
-| Competitor | Website | Focus | Segment | Teardown |
-|-----------|---------|-------|---------|----------|
-| Lovable | lovable.dev | Full-stack AI app builder, design-focused | SMB-Mid | [competitors/lovable/](competitors/lovable/CLAUDE.md) |
-| Google Stitch | stitch.withgoogle.com | AI prototyping, Google Cloud ecosystem | Mid-Enterprise | [competitors/google-stitch/](competitors/google-stitch/CLAUDE.md) |
-| v0 | v0.dev | AI UI generation, Vercel/React ecosystem | SMB-Mid | [competitors/v0/](competitors/v0/CLAUDE.md) |
-| Replit | replit.com | AI cloud IDE + deployment | SMB-Mid | [competitors/replit/](competitors/replit/CLAUDE.md) |
-| Figma Make | figma.com/make | Design-to-code AI | Mid-Enterprise | [competitors/figma-make/](competitors/figma-make/CLAUDE.md) |
-| Bolt | bolt.new | Full-stack AI app builder, speed-focused | SMB-Mid | [competitors/bolt/](competitors/bolt/CLAUDE.md) |
+The current overview lives in [`../customers/research/competitive-raas-platforms.md`](../customers/research/competitive-raas-platforms.md). When per-competitor depth is needed, drop a folder under `competitors/{competitor-slug}/` with `tldr.md` + `pricing.md`.
 
-## Doc Index
+## Folder Structure
 
-| File | What's in it | When to read |
-|------|-------------|--------------|
-| `competitors/competitive-matrix.md` | Feature comparison matrix across all competitors | Quick feature lookup, roadmap prioritization |
-| `competitors/{competitor}/tldr.md` | Per-competitor summary (strengths, weaknesses, differentiation) | Understanding a specific competitor |
-| `competitors/{competitor}/pricing.md` | Pricing model, tiers, and comparison to Forge | Pricing analysis for a specific competitor |
+```
+competitive-research/
+└── competitors/
+    └── {competitor-slug}/
+        ├── tldr.md            # 1-page summary: what they do, strengths, weaknesses, differentiation
+        ├── pricing.md         # Pricing model, tiers, comparison to FINN
+        └── images/            # Optional: screenshots, pricing pages
+```
 
-## Forge Competitive Positioning
+## What to track
 
-| Dimension | Forge Advantage |
-|-----------|-----------------|
-| **Production-readiness** | Only platform generating deploy-ready, enterprise-grade apps |
-| **Full-stack** | Frontend + backend + database + auth + deployment in one flow |
-| **Customization** | Deep control over architecture, patterns, and tech stack choices |
-| **Enterprise features** | SSO, audit logging, team workspaces, compliance controls |
-| **Iteration speed** | Modify and redeploy without regenerating from scratch |
-
-## Key Takeaways
-
-1. **No single competitor covers the full stack well.** Lovable, v0, and Bolt are frontend-heavy; Replit is full-stack but design-weak; Google Stitch is ecosystem-locked; Figma Make is design-tool-bound.
-2. **Production-readiness is our moat.** Most competitors generate prototypes. Forge generates production apps.
-3. **Enterprise is underserved.** Only Google Stitch has enterprise credibility, but their product is early. This is our biggest opportunity.
-4. **Design quality is table stakes.** Lovable and v0 set a high bar. We must match their visual quality while delivering superior architecture.
+| Dimension | Why it matters |
+|-----------|---------------|
+| Coverage | Do they cover supplier / buyer / operations, or just one slice? |
+| Geographies | Active in DACH? EU-wide? UK? Global? |
+| Pricing model | Take-rate vs. SaaS vs. listing fee — implications for our supplier pitch |
+| Inventory model | Do they carry inventory or pure marketplace? |
+| Trust mechanisms | Inspections, condition reports, dispute resolution |
+| Integration depth | OEM/DMS integrations they advertise |
 
 ## When to Update
 
-- After competitive deal wins/losses
-- When competitors launch new features
-- After sales calls where competitors are mentioned
+- After competitive deal wins/losses (supplier or buyer side)
+- When a competitor launches a notable feature
+- After supplier or buyer calls where competitors are mentioned
 - Quarterly review of pricing and positioning
-- After each website audit (update `competitors/competitive-matrix.md`)

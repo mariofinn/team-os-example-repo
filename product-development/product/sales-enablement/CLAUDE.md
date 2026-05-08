@@ -1,29 +1,23 @@
-# Sales Enablement
+# Sales / Ops Enablement
 
 ## Purpose
-Sales-facing documentation and customer onboarding materials for Forge.
+Sales- and ops-facing documentation for the FINN Remarketing Tech products. Use this folder for material that helps the supplier sales motion (pitching RaaS to OEMs/leasing partners) and the buyer/dealer relationship motion (onboarding new dealer accounts, training internal Ops on portal features).
 
 ---
 
-## Doc Index
+## What belongs here
 
-| File | Description |
-|------|-------------|
-| `customer-onboarding-guide.md` | Step-by-step customer onboarding guide |
-
----
-
-## Onboarding Flow
-
-1. Account setup and permissions
-2. Platform integrations (GitHub, Figma, etc.)
-3. AI generation configuration
-4. Dashboard walkthrough
-5. Deployment setup
+| Type | Example |
+|------|---------|
+| Pitch decks / talk tracks | Supplier RaaS pitch, buyer-portal walkthroughs |
+| Onboarding playbooks | Supplier onboarding checklist, dealer onboarding guide |
+| Feature primers | One-pagers for newly launched features the sales/ops teams need to discuss |
+| FAQ / objection handling | Common supplier or buyer pushbacks and how to address them |
 
 ---
 
-## Sales Resources
+## Related
 
-For competitive positioning, see:
-- `../competitive-research/CLAUDE.md`
+- Competitive positioning → `../competitive-research/CLAUDE.md`
+- Stakeholder profiles → `../stakeholders/CLAUDE.md`
+- Writing style for customer-facing copy → `../processes/writing-styles/writing-style-customer.md`

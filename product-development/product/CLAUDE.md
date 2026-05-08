@@ -1,12 +1,12 @@
-# Forge Product Context
+# Remarketing Product Context
 
 ## Overview
 
-Forge is Forge Labs' AI prototyping platform that enables developers and teams to turn ideas into production-ready applications through intelligent code generation, real-time collaboration, and one-click deployment.
+FINN Remarketing Tech builds the products and tooling that handle the back-half of FINN's car subscription lifecycle: sourcing cars back from ending subscriptions, running them through compound and customer operations, and selling them on via the buyer and supplier products.
 
-**North Star:** Build the most reliable AI-powered development platform - empowering customers to go from concept to production by improving generation quality, developer experience, and deployment velocity.
+**North Star:** Maximise sell-through margin per car while shrinking de-fleeting cycle time, by making remarketing operations programmatic instead of manual.
 
-**New to Forge?** See the [Onboarding Guide](../../team/onboarding-guides/onboarding-general.md) for a comprehensive introduction.
+**New to the team?** See the [Onboarding Guide](../../team/onboarding-guides/onboarding-general.md) for setup and orientation.
 
 ---
 
@@ -14,34 +14,32 @@ Forge is Forge Labs' AI prototyping platform that enables developers and teams t
 
 ```
 product/
-├── competitive-research/
-│   └── competitors/          # Competitor audits and feature matrices
-├── customers/                # Account context, calls, feature requests
-├── strategy/                 # Roadmaps, vision, business context
-├── product-context/          # Reference docs for Forge systems
-├── PRDs/                     # Product requirement documents
+├── PRDs/                     # Product requirement documents (organized by pillar)
+├── strategy/                 # Roadmaps, vision, OKRs, business context, frameworks
+├── customers/                # Buyer + supplier account context, calls, research
+├── competitive-research/     # Competitor audits — RaaS platforms, dealer auction tools
+├── product-context/          # Reference docs for FINN Remarketing systems and concepts
+├── stakeholders/             # Stakeholder profiles (working styles, what they care about)
+├── processes/                # Operational processes and writing-style guides
 ├── launch-emails/            # Launch communications
-├── sales-enablement/         # Sales-facing docs, onboarding
-├── processes/                # Operational processes
-├── meetings/                 # Meeting notes
-└── workflows/                # Workflow specs
+├── sales-enablement/         # Sales-/Ops-facing docs and onboarding
+├── meetings/                 # Recurring meeting docs, transcripts, summaries
+└── workflows/                # Reusable workflow specs (e.g. bi-weekly update)
 ```
 
-Note: `analytics/`, `engineering/`, `data-engineering/`, and `design/` are sibling folders to `product/` under `product-development/`.
+`analytics/`, `engineering/`, `data-engineering/`, and `design/` are sibling folders to `product/` under `product-development/`.
 
 Each folder has its own `CLAUDE.md` with folder-specific context.
 
 ---
 
-## Five Core Pillars
+## Three Pillars
 
-| Pillar | Purpose | P0 Features |
-|--------|---------|-------------|
-| **1. Generation Quality** | Make AI output production-ready | Multi-file generation, framework detection, code quality scoring |
-| **2. Developer Experience** | Seamless build-to-ship workflow | Inline editing, real-time preview, version history, undo/redo |
-| **3. Deployment** | One-click production deploys | Auto-provisioning, custom domains, environment variables, CI/CD |
-| **4. Collaboration** | Team-based prototyping | Shared projects, commenting, branching, role-based permissions |
-| **5. Enterprise** | Scale for organizations | SSO, audit logs, usage analytics, team management, SLAs |
+| Pillar | Purpose | Examples |
+|--------|---------|----------|
+| **Supplier (RaaS)** | Sell FINN's remarketing capability as a service to OEMs and leasing partners. | Supplier portal, pricing flows, supplier onboarding, integration with OEM systems |
+| **Buyer / Dealer** | Sell cars to B2B buyers (independent dealers, trade buyers, larger dealer groups). | Dealer portal, auction mechanics, search/filter, deal flow, buyer KYC |
+| **Operations** | Run the physical and administrative work between intake and sale. Split conceptually into **compound operations** (tyre change, deregistration, refurbishment, photographs) and **customer operations** (PoA collection, transport coordination, paper sending). | Compound workflow tooling, transport orchestration, document handling |
 
 ---
 
@@ -49,39 +47,30 @@ Each folder has its own `CLAUDE.md` with folder-specific context.
 
 | Purpose | Path |
 |---------|------|
-| Full Business Context | `strategy/business-context/forge-business-info.md` |
-| Product Roadmap | `strategy/roadmaps/q2-2026-roadmap.md` |
-| Competitive Research | `competitive-research/CLAUDE.md` |
-| Competitive Feature Matrix | `competitive-research/competitors/competitive-matrix.md` |
-| Competitor Teardowns | `competitive-research/competitors/CLAUDE.md` (6 competitor audits, product + website) |
-| Users & JTBD | `strategy/business-context/forge-jtbd-and-users.md` |
-| Customer Accounts | `customers/CLAUDE.md` (named accounts, segments, data source pointers) |
+| FINN business context | `strategy/business-context/finn-business-info.md` |
+| OKRs (current trimester) | `strategy/okrs-t2-2026.md` (T1 in `okrs-t1-2026.md`) |
+| Strategy frameworks (generic, reusable) | `strategy/frameworks/` |
+| Competitive research | `competitive-research/CLAUDE.md` |
+| Buyer accounts | `customers/accounts/buyers/` |
+| Supplier accounts | `customers/accounts/suppliers/` |
+| Customer research | `customers/research/` |
 | PRDs | `PRDs/CLAUDE.md` |
+| Stakeholder profiles | `stakeholders/CLAUDE.md` |
 | Analytics | `../analytics/CLAUDE.md` |
 
 ---
 
-## Forge Labs Terminology
+## FINN Remarketing Terminology
 
 | Term | Definition |
 |------|------------|
-| Forge Pro | Forge Pro tier - always capitalized (product name) |
-| Forge Teams | Forge Teams tier - always capitalized (product name) |
-| Forge Enterprise | Forge Enterprise tier - always capitalized (product name) |
-| Dashboard | Customer-facing project dashboard - always capitalized when referring to the product surface |
-
-## Forge Product Terminology
-
-| Term | Definition |
-|------|------------|
-| Project | A customer workspace containing generated code, configuration, and deployment settings |
-| Generation | A single AI code generation event (prompt in, code out) |
-| Template | A pre-built starting point for common app types (SaaS dashboard, landing page, e-commerce, etc.) |
-| Preview | The live rendered output of generated code before deployment |
-| Deploy | Publishing a project to production infrastructure |
-| Iteration | A follow-up generation that modifies existing project code |
-| Prompt | The natural language input a customer provides to generate or iterate on code |
-| GSR | Generation Success Rate - percentage of generations that produce working, error-free code |
-| TTD | Time-to-Deploy - elapsed time from first generation to production deployment |
-| PCR | Project Completion Rate - percentage of projects that reach deployment |
-| Competitors | Lovable, Google Stitch, v0, Replit, Figma Make, Bolt (see `competitive-research/CLAUDE.md`) |
+| De-fleeting | The end-to-end process of taking a car out of subscription and back through Remarketing for resale. |
+| Compound | The physical site where returned cars are inspected, refurbished, and held before sale. |
+| Compound Operations | Physical work at the compound: tyre change, deregistration, refurbishment, condition reports, photography. |
+| Customer Operations | Customer-facing handover work: PoA (Power of Attorney) collection, transport coordination, paper sending. |
+| RaaS | Remarketing-as-a-Service — FINN selling its remarketing capability to external OEMs / leasing companies. |
+| Supplier | An external partner (typically an OEM or leasing company) using FINN as their remarketing operator. Examples in scope: Nissan, Renault, MG. |
+| Buyer | A B2B trade purchaser (independent dealer, dealer group, trade buyer) buying cars from FINN. |
+| Normalized Price (Clean RV) | Residual value of a vehicle without damage / excess-mileage deductions — the "clean" baseline. See `product-context/supplier-portal-pricing.md`. |
+| All-In Price | Final price including damage and mileage adjustments. |
+| GHG Quota | German emissions quota generated by EVs; tradable revenue stream tracked alongside vehicle margin. |

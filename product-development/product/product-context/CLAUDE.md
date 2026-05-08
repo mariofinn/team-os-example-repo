@@ -1,7 +1,7 @@
 # Product Context
 
 ## Purpose
-Reference documentation on Forge Labs products and platforms that Forge integrates with or extends. Use these docs to understand how Forge fits into the broader Forge Labs developer ecosystem.
+Reference documentation on FINN Remarketing systems and concepts that newcomers and AI sessions need to understand the domain. Use these docs to ground PRDs, RFCs, and customer/stakeholder communications in shared vocabulary.
 
 ---
 
@@ -9,27 +9,18 @@ Reference documentation on Forge Labs products and platforms that Forge integrat
 
 | File | Description |
 |------|-------------|
-| `forge-platform-overview.md` | Forge Labs platform structure, navigation, features, and integration points |
-| `supplier-portal-pricing.md` | Pricing concepts: normalized vs. all-in price, how they relate in the supplier portal UI |
+| `supplier-portal-pricing.md` | Pricing concepts: normalized price (Clean RV) vs. all-in price, how they relate in the supplier portal UI |
+
+More reference docs land here as we formalize them — examples worth writing next: de-fleeting flow diagram, GHG quota mechanics, compound operations sequence, transport-orchestration model.
 
 ---
 
 ## When to Use
 
-- Understanding how Forge extends Developer Console capabilities
-- Writing PRDs that reference Console features
-- Explaining Forge's value-add vs native Console functionality
-- Onboarding new team members on Forge Labs developer tools
-
----
-
-## Forge Integration Points
-
-| Forge Labs Product | Forge Relationship |
-|--------------------|-------------------|
-| **Developer Console** | Forge accessible via Console link-out; extends Projects > Generations |
-| **Forge CLI** | CLI tool for local development and deployment |
-| **Forge Cloud** | Hosting and deployment infrastructure |
+- Writing PRDs that reference Remarketing-specific concepts (pricing, GHG, compound flow)
+- Onboarding new team members on the domain
+- Aligning across product / engineering / analytics on shared definitions
+- AI sessions where the agent needs the FINN-specific vocabulary
 
 ---
 
@@ -37,6 +28,7 @@ Reference documentation on Forge Labs products and platforms that Forge integrat
 
 | Folder | Content |
 |--------|---------|
-| `../strategy/` | Forge roadmaps and vision |
-| `../competitive-research/` | How Forge compares to third-party alternatives |
+| `../strategy/business-context/finn-business-info.md` | FINN GmbH company overview |
+| `../strategy/` | Roadmaps, OKRs, strategic frameworks |
+| `../competitive-research/` | How FINN Remarketing compares to RaaS competitors |
 | `../PRDs/` | Feature specifications |

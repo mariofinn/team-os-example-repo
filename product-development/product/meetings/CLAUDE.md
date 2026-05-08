@@ -1,23 +1,25 @@
 # Meetings
 
-Recurring meeting docs, transcripts, and summaries.
+Recurring meeting docs, transcripts, and summaries for FINN Remarketing Tech.
 
 ## Structure
 
 Each meeting type has its own folder with up to three subdirectories:
 
-- `docs/` - Pre-meeting prep docs and agendas
-- `transcripts/` - Raw meeting transcripts
-- `summaries/` - Post-meeting summaries and action items
+- `docs/` — pre-meeting prep docs and agendas
+- `transcripts/` — raw meeting transcripts (often pulled from Granola)
+- `summaries/` — post-meeting summaries and action items
 
 ## Naming Convention
 
-Files in `docs/` follow `YYYY-MM-DD-<meeting-name>-<topic>.md` (e.g., `2026-03-04-forge-bi-weekly-review.md`).
+Files follow `YYYY-MM-DD-{meeting-name}.md`, e.g. `2026-05-08-bi-weekly-review.md`.
 
 ## Meeting Types
 
-| Meeting | Folder | Cadence |
-|---------|--------|---------|
-| Team Bi-Weekly | `team-bi-weekly/` | Biweekly |
-| Standup | `standup/` | Daily |
-| Sprint Planning | `sprint-planning/` | Biweekly |
+| Meeting | Folder | Cadence | Notes |
+|---------|--------|---------|-------|
+| Team Bi-Weekly Review | `team-bi-weekly/` | Biweekly | Driven by the [bi-weekly update workflow](../workflows/bi-weekly-update/CLAUDE.md) |
+| Sprint Planning | `sprint-planning/` | Biweekly | Aligns with Jira `FRT` board cadence |
+| Standup | `standup/` | Daily / async | Slack-first; only docs that warrant durable capture land here |
+
+Folders are created on demand — drop the first meeting doc in and that's the seed.

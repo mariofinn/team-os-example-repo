@@ -1,20 +1,21 @@
-# Team OS Example Repo
+# FINN Remarketing Tech — Team OS
 
-Scaling isn't about making yourself faster - it's about making your team better.
+The shared knowledge base for the FINN Remarketing Tech team. Product docs, engineering plans, analytics, customer call notes, competitive research, and stakeholder context — structured so any teammate (or AI session) starts with the team's full context.
 
-This repo is a complete example of a Team OS - the shared knowledge base that turns your team's collective context into something AI can actually use.
+The FINN Remarketing domain handles what happens to vehicles after a subscription ends: sourcing back from customers (de-fleeting), running compound operations (tyre changes, deregistration, refurbishment), running customer operations (PoA, transport, paper handling), and selling cars on through buyer (B2B dealer auction) and supplier (RaaS for OEMs) products.
 
-The example company is Forge, a fictional AI prototyping startup with a 10-person product team. Inside, you'll find product docs, engineering plans, analytics, customer call notes, competitive research, and more - everything a product team needs, structured so that when anyone starts a new AI session, the agent already knows what it's working with.
+## How this repo is organized
 
-Instead of one person bottlenecking context, everyone on the team can self-serve. The repo becomes the shared brain of the team.
+- `product-development/` — PRDs, RFCs, plans, analytics, customer research, strategy
+- `team/` — onboarding guides and team retros
+- `.claude/` — agents, commands, and skills the whole team can reuse
 
-Created by [Hannah Stulberg](https://hannahstulberg.substack.com/).
+Every folder has its own `CLAUDE.md` describing what lives there. Read [CLAUDE.md](CLAUDE.md) at the root for the team table and doc index.
 
-## Where to learn more
+## Origin
 
-- **[In the Weeds](https://hannahstulberg.substack.com/):** Hannah's Substack on practical AI workflows
-- **[The Growth Podcast](https://www.news.aakashg.com/):** Aakash Gupta's Substack on product management and growth
+Originally built as a Team OS example for a fictional product called Forge by [Hannah Stulberg](https://hannahstulberg.substack.com/). Forked and adapted for the FINN Remarketing Tech team.
 
 ## License
 
-This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See [LICENSE](LICENSE) for details.
+Forked under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See [LICENSE](LICENSE) for details.
