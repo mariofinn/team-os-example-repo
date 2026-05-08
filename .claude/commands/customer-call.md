@@ -20,14 +20,16 @@ Ask the user which customer type this call relates to (or infer from context):
 - **Supplier** — RaaS supplier conversations (OEMs / leasing partners — e.g. Nissan, Renault, MG)
 - **Buyer** — B2B buyer / dealer conversations
 
-Base paths for customer calls:
+Base paths for customer calls (one root per type):
 
 ```
-product-development/product/customers/accounts/suppliers/{name}/calls/summaries/
-product-development/product/customers/accounts/suppliers/{name}/calls/transcripts/
-product-development/product/customers/accounts/buyers/{name}/calls/summaries/
-product-development/product/customers/accounts/buyers/{name}/calls/transcripts/
+product-development/product/suppliers/accounts/{name}/calls/summaries/
+product-development/product/suppliers/accounts/{name}/calls/transcripts/
+product-development/product/buyers/accounts/{name}/calls/summaries/
+product-development/product/buyers/accounts/{name}/calls/transcripts/
 ```
+
+In the rest of this doc, `{type-root}` refers to either `suppliers/accounts` or `buyers/accounts` depending on the customer type chosen in Step 1.
 
 ## Step 1.5: Granola Connectivity Check
 
@@ -43,8 +45,8 @@ Skip this check if the user pastes a transcript or provides a file path.
 
 **Always check both folders before creating new files:**
 
-1. Search `accounts/{type}/{name}/calls/summaries/` for prior summaries
-2. Search `accounts/{type}/{name}/calls/transcripts/` for prior transcripts
+1. Search `{type-root}/{name}/calls/summaries/` for prior summaries
+2. Search `{type-root}/{name}/calls/transcripts/` for prior transcripts
 
 **If files exist:**
 - Review existing Open Action Items in the account-context.md
@@ -82,13 +84,13 @@ Ask the user for:
 
 ### 5a. Write Summary File
 
-Save the summary to `product-development/product/customers/accounts/{type}/{name}/calls/summaries/{YYYY-MM-DD}.md`.
+Save the summary to `product-development/product/{type-root}/{name}/calls/summaries/{YYYY-MM-DD}.md`.
 
 Each meeting is its own file. Cross-reference the transcript at the top of the summary.
 
 ### 5b. Write Transcript File
 
-Save the transcript to `product-development/product/customers/accounts/{type}/{name}/calls/transcripts/{YYYY-MM-DD}.md`. Cross-reference the summary at the top.
+Save the transcript to `product-development/product/{type-root}/{name}/calls/transcripts/{YYYY-MM-DD}.md`. Cross-reference the summary at the top.
 
 For large transcripts (>15KB), write the header via the Write tool and append the body via Python's `open(file, "a")` with triple-quoted strings (handles all special characters cleanly).
 

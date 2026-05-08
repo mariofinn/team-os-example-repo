@@ -16,7 +16,8 @@ FINN Remarketing Tech builds the products and tooling that handle the back-half 
 product/
 ├── PRDs/                     # Product requirement documents (organized by pillar)
 ├── strategy/                 # Roadmaps, vision, OKRs, business context, frameworks
-├── customers/                # Buyer + supplier account context, calls, research
+├── suppliers/                # Supplier (RaaS) account context, calls, research
+├── buyers/                   # Buyer / dealer account context, calls, research
 ├── competitive-research/     # Competitor audits — RaaS platforms, dealer auction tools
 ├── product-context/          # Reference docs for FINN Remarketing systems and concepts
 ├── processes/                # Operational processes and writing-style guides
@@ -50,11 +51,12 @@ Each folder has its own `CLAUDE.md` with folder-specific context.
 | OKRs (current trimester) | `strategy/okrs-t2-2026.md` (T1 in `okrs-t1-2026.md`) |
 | Strategy frameworks (generic, reusable) | `strategy/frameworks/` |
 | Competitive research | `competitive-research/CLAUDE.md` |
-| Buyer accounts | `customers/accounts/buyers/` |
-| Supplier accounts | `customers/accounts/suppliers/` |
-| Customer research | `customers/research/` |
+| Buyer accounts | `buyers/accounts/` |
+| Supplier accounts | `suppliers/accounts/` |
+| Supplier research | `suppliers/research/` |
+| Buyer research | `buyers/research/` |
 | PRDs | `PRDs/CLAUDE.md` |
-| OEM-supplier partner intel | `customers/research/supplier-oem-stakeholder-profiles.md` |
+| OEM-supplier partner intel | `suppliers/research/oem-stakeholder-profiles.md` |
 | Analytics | `../analytics/CLAUDE.md` |
 
 ---

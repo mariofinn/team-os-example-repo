@@ -34,7 +34,8 @@
 | Feature index | `product-development/feature-index.yaml` | Master lookup — every feature mapped to its PRDs, RFCs, plans, schemas, experiments, tickets |
 | Product | `product-development/product/CLAUDE.md` | Product context, pillars, segments, competitive landscape |
 | PRDs | `product-development/product/PRDs/CLAUDE.md` | Product requirement documents index |
-| Customer insights | `product-development/product/customers/CLAUDE.md` | Customer calls, account context, feature requests |
+| Suppliers (RaaS) | `product-development/product/suppliers/CLAUDE.md` | Supplier (OEM/leasing) account context, calls, research |
+| Buyers (B2B dealers) | `product-development/product/buyers/CLAUDE.md` | Buyer / dealer account context, calls, research |
 | Competitive research | `product-development/product/competitive-research/CLAUDE.md` | Competitor intel and feature comparisons |
 | Strategy | `product-development/product/strategy/CLAUDE.md` | Roadmaps, vision, business context |
 | Launches | `product-development/product/launch-emails/CLAUDE.md` | Launch communications |

@@ -36,7 +36,7 @@ This guide covers setup and orientation common to all new FINN Remarketing Tech 
 - [FINN business info](../../product-development/product/strategy/business-context/finn-business-info.md) — company context
 - [Remarketing OKRs (current trimester)](../../product-development/product/strategy/okrs-t2-2026.md)
 - [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology, key docs
-- Stakeholder context — internal stakeholder profiles live in Mario's personal PM-OS repo; ask him for access. External OEM-supplier intel: [`customers/research/supplier-oem-stakeholder-profiles.md`](../../product-development/product/customers/research/supplier-oem-stakeholder-profiles.md)
+- Stakeholder context — internal stakeholder profiles live in Mario's personal PM-OS repo; ask him for access. External OEM-supplier intel: [`suppliers/research/oem-stakeholder-profiles.md`](../../product-development/product/suppliers/research/oem-stakeholder-profiles.md)
 
 ## Slack Channels
 

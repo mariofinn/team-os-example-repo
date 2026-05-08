@@ -13,7 +13,8 @@ All product development artifacts for FINN Remarketing Tech — product, enginee
 | [design/CLAUDE.md](design/CLAUDE.md) | Design docs (stub — design artifacts live in Figma, linked from PRDs) |
 | `feature-index.yaml` | Master feature index — every feature mapped to its PRD, RFC, plan, schema, experiment, and Jira tickets |
 | `analytics/data-catalog.yaml` | BigQuery dataset/table registry — descriptions, owners, refresh cadence, upstream sources |
-| [product/customers/CLAUDE.md](product/customers/CLAUDE.md) | Buyer + supplier accounts and research |
+| [product/suppliers/CLAUDE.md](product/suppliers/CLAUDE.md) | Supplier (OEM/leasing) account context, calls, research |
+| [product/buyers/CLAUDE.md](product/buyers/CLAUDE.md) | Buyer / dealer account context, calls, research |
 
 ## Pillars
 

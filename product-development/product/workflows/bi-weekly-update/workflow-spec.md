@@ -76,6 +76,7 @@ The workflow keeps the following references stable across runs:
 
 - Jira project key: `FRT`, board 245
 - OKR file pointer: latest `okrs-tN-YYYY.md` under `../../strategy/`
-- Customer accounts root: `../../customers/accounts/`
+- Supplier accounts root: `../../suppliers/accounts/`
+- Buyer accounts root: `../../buyers/accounts/`
 - Output dir: `../../meetings/team-bi-weekly/docs/`
 - Google Doc target: stored in workflow config (a single rolling doc by default)

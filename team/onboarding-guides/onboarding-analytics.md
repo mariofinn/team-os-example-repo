@@ -39,7 +39,7 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 - [data-catalog.yaml](../../product-development/analytics/data-catalog.yaml) — BigQuery dataset/table registry
 - [Funnel-analysis playbook](../../product-development/analytics/playbooks/funnel-analysis.md)
 - [OKRs](../../product-development/product/strategy/okrs-t2-2026.md) — KPI tree and what we're moving
-- [Customer Insights](../../product-development/product/customers/CLAUDE.md) — qualitative data to pair with quantitative
+- [Suppliers](../../product-development/product/suppliers/CLAUDE.md) and [Buyers](../../product-development/product/buyers/CLAUDE.md) — qualitative data to pair with quantitative
 
 ## Slack Channels
 

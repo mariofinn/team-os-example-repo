@@ -3,7 +3,7 @@
 **Type:** supplier
 **Status:** discovery
 **FINN owner (PM):** Mario Schiefer
-**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
+**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../finn-commercial-ownership.md`](../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
 **HubSpot:** [Renault Deutschland AG](https://app.hubspot.com/contacts/6028262/record/0-2/27318597186)
 
@@ -71,4 +71,4 @@ Per-meeting transcripts: `calls/transcripts/{YYYY-MM-DD}.md`
 |------|-------|------------|
 | 2026-02-19 | FINN x Renault Produkt Interview | 0c72ff18-89c3-44ec-a275-aa6ed5211c00 |
 
-(Synthesis lives in [`../../../research/supplier-pain-points.md`](../../../research/supplier-pain-points.md) and [`../../../research/supplier-discovery-synthesis.md`](../../../research/supplier-discovery-synthesis.md).)
+(Synthesis lives in [`../../research/supplier-pain-points.md`](../../research/supplier-pain-points.md) and [`../../research/supplier-discovery-synthesis.md`](../../research/supplier-discovery-synthesis.md).)

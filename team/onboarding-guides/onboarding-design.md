@@ -34,7 +34,7 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 
 - [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology
 - [PRDs](../../product-development/product/PRDs/CLAUDE.md) — current feature specs with design context
-- [Customer Research](../../product-development/product/customers/CLAUDE.md) — buyer + supplier research, verbatims
+- [Supplier Research](../../product-development/product/suppliers/CLAUDE.md) and [Buyer Research](../../product-development/product/buyers/CLAUDE.md) — verbatims, pain points, discovery synthesis
 - [Design CLAUDE.md](../../product-development/design/CLAUDE.md)
 
 ## Slack Channels
@@ -59,7 +59,7 @@ Plus FINN-wide design channels — Iryna will point you to the right ones.
 
 - [ ] Explore the Figma workspace and review the buyer + supplier portal design files
 - [ ] Read 2–3 recent PRDs to understand how design specs are structured here
-- [ ] Read the [supplier discovery research](../../product-development/product/customers/research/supplier-discovery-synthesis.md) and [buyer portal context](../../product-development/product/customers/research/buyer-portal-context.md)
+- [ ] Read the [supplier discovery research](../../product-development/product/suppliers/research/supplier-discovery-synthesis.md) and [buyer portal context](../../product-development/product/buyers/research/buyer-portal-context.md)
 - [ ] Meet with Iryna and Daria for design system walkthrough
 - [ ] Shadow a design review session
 - [ ] Pick up a small design task from Jira `FRT` (Iryna or Mario will assign one)

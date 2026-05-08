@@ -37,10 +37,11 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 
 - [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology, key docs
 - [PRD index](../../product-development/product/PRDs/CLAUDE.md)
-- [Customer Insights](../../product-development/product/customers/CLAUDE.md) — buyer + supplier accounts and research
+- [Suppliers (RaaS)](../../product-development/product/suppliers/CLAUDE.md) — supplier accounts, calls, research
+- [Buyers (B2B dealers)](../../product-development/product/buyers/CLAUDE.md) — buyer accounts, calls, research
 - [Competitive Research](../../product-development/product/competitive-research/CLAUDE.md)
 - [Strategy / OKRs](../../product-development/product/strategy/CLAUDE.md)
-- OEM-supplier partner intel: [`customers/research/supplier-oem-stakeholder-profiles.md`](../../product-development/product/customers/research/supplier-oem-stakeholder-profiles.md)
+- OEM-supplier partner intel: [`suppliers/research/oem-stakeholder-profiles.md`](../../product-development/product/suppliers/research/oem-stakeholder-profiles.md)
 
 ## Slack Channels
 
@@ -65,7 +66,7 @@ Additional FINN product / customer Slack channels — your manager will add you.
 
 - [ ] Read the most recent PRDs (use the [PRD index](../../product-development/product/PRDs/CLAUDE.md))
 - [ ] Shadow a customer call (buyer or supplier — ask Mario for upcoming ones)
-- [ ] Read the [supplier discovery synthesis](../../product-development/product/customers/research/supplier-discovery-synthesis.md) and [supplier pain points](../../product-development/product/customers/research/supplier-pain-points.md)
-- [ ] Review the [competitive RaaS landscape](../../product-development/product/customers/research/competitive-raas-platforms.md)
+- [ ] Read the [supplier discovery synthesis](../../product-development/product/suppliers/research/supplier-discovery-synthesis.md) and [supplier pain points](../../product-development/product/suppliers/research/supplier-pain-points.md)
+- [ ] Review the [competitive RaaS landscape](../../product-development/product/competitive-research/raas-competitive-overview.md)
 - [ ] Meet with Fabian and Marco for context transfer
 - [ ] Pick up a small product task from Jira `FRT`

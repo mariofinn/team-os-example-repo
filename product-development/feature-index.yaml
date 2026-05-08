@@ -31,6 +31,6 @@
 #         - FRT-123
 #         - FRT-456
 #       related_research:
-#         - product-development/product/customers/research/{file}.md
+#         - product-development/product/{suppliers,buyers}/research/{file}.md
 
 features: []

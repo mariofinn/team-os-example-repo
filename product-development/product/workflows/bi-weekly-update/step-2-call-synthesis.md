@@ -10,7 +10,7 @@ Produce the "Customer Calls" section with a customer overview table, thematic an
 
 ### 1. Find recent call summaries
 
-Scan `../../customers/accounts/suppliers/*/calls/summaries/` and `../../customers/accounts/buyers/*/calls/summaries/` for files dated in the last 2 weeks. Read each one.
+Scan `../../suppliers/accounts/*/calls/summaries/` and `../../buyers/accounts/*/calls/summaries/` for files dated in the last 2 weeks. Read each one.
 
 ### 2. Categorize customers
 

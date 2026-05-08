@@ -12,7 +12,7 @@ Update customer / pilot exec summaries, deep dives, and the cross-customer summa
 
 Check which active suppliers and buyers had calls in the last 2 weeks (from Step 2 data).
 
-The list of "active" accounts changes — read each account's `account-context.md` to determine current pilot/onboarding/active status. Don't hardcode account names here; let the folder structure under `../../customers/accounts/` be the source of truth.
+The list of "active" accounts changes — read each account's `account-context.md` to determine current pilot/onboarding/active status. Don't hardcode account names here; let the folder structures under `../../suppliers/accounts/` and `../../buyers/accounts/` be the source of truth.
 
 ### 2. Compare new data against existing sections
 

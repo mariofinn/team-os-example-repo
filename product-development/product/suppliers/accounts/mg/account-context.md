@@ -3,7 +3,7 @@
 **Type:** supplier
 **Status:** discovery
 **FINN owner (PM):** Mario Schiefer
-**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
+**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../finn-commercial-ownership.md`](../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
 **HubSpot:** [MG Motors DE](https://app.hubspot.com/contacts/6028262/record/0-2/5187292264)
 
@@ -72,4 +72,4 @@ Per-meeting transcripts: `calls/transcripts/{YYYY-MM-DD}.md`
 |------|-------|------------|
 | 2026-04-14 | FINN & MG Austausch | 9b3dec34-b367-4e68-9147-86fc20765123 |
 
-(Synthesis lives in [`../../../research/supplier-pain-points.md`](../../../research/supplier-pain-points.md) and [`../../../research/supplier-discovery-synthesis.md`](../../../research/supplier-discovery-synthesis.md).)
+(Synthesis lives in [`../../research/supplier-pain-points.md`](../../research/supplier-pain-points.md) and [`../../research/supplier-discovery-synthesis.md`](../../research/supplier-discovery-synthesis.md).)

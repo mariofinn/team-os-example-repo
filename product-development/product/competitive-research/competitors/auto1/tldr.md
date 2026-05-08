@@ -56,6 +56,6 @@ Marketplace-style fees on both sides. Seller-side fees are low (mobile evaluatio
 
 ## Weaknesses / opportunities for FINN
 
-- Buy-and-resell model is structurally misaligned with OEMs that want brand protection and channel control (validated in supplier discovery — see `../../../customers/research/supplier-pain-points.md`)
+- Buy-and-resell model is structurally misaligned with OEMs that want brand protection and channel control (validated in supplier discovery — see `../../../suppliers/research/supplier-pain-points.md`)
 - Christoph (Nissan) considered Auto1 in their 2024 tender and explicitly said *"Auto1 is not a serious competitor in this market"* for the OEM segment
 - They don't run a closed-network / dealer-pre-sale flow as cleanly as BCA or a true RaaS player

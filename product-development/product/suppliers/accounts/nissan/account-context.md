@@ -3,7 +3,7 @@
 **Type:** supplier
 **Status:** discovery
 **FINN owner (PM):** Mario Schiefer
-**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
+**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../finn-commercial-ownership.md`](../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
 **HubSpot:** [Nissan Deutschland GmbH](https://app.hubspot.com/contacts/6028262/record/0-2/2496806891)
 
@@ -71,4 +71,4 @@ Per-meeting transcripts: `calls/transcripts/{YYYY-MM-DD}.md`
 | 2026-01-30 | Nissan x FINN v1 | 1c83d4fb-d1a3-453f-84bd-c02ba42a606d |
 | 2026-02-04 | FINN/Nissan Follow-up | ded273d2-a26f-437f-a5f2-fe1e3ca743fe |
 
-(Synthesis lives in [`../../../research/supplier-pain-points.md`](../../../research/supplier-pain-points.md) and [`../../../research/supplier-discovery-synthesis.md`](../../../research/supplier-discovery-synthesis.md). Pull dated summary files into `calls/summaries/` when those interviews are formally written up here.)
+(Synthesis lives in [`../../research/supplier-pain-points.md`](../../research/supplier-pain-points.md) and [`../../research/supplier-discovery-synthesis.md`](../../research/supplier-discovery-synthesis.md). Pull dated summary files into `calls/summaries/` when those interviews are formally written up here.)

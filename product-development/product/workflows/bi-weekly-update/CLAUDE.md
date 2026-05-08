@@ -7,7 +7,7 @@ Automated workflow that generates the bi-weekly Remarketing Tech review document
 ## What This Workflow Does
 
 1. **Pulls engineering status** from Jira (`FRT` board) + PM context dump
-2. **Synthesizes recent customer calls** from `product-development/product/customers/accounts/*/calls/summaries/`
+2. **Synthesizes recent customer calls** from `product-development/product/{suppliers,buyers}/accounts/*/calls/summaries/`
 3. **Updates customer/pilot exec summaries** if new call data changes the narrative
 4. **Pushes the compiled doc** to the bi-weekly Google Doc via the Google Workspace MCP
 5. **PM reviews and finalizes** before the meeting
@@ -30,7 +30,7 @@ Each step has its own instruction file (`step-1-eng-status.md`, etc.) with detai
 
 - Jira `FRT` (board 245) — completed and in-progress tickets
 - [Current OKRs](../../strategy/okrs-t2-2026.md) — workstream structure
-- `product-development/product/customers/accounts/{type}/{name}/calls/summaries/` — recent customer calls
+- `product-development/product/suppliers/accounts/{name}/calls/summaries/` and `product-development/product/buyers/accounts/{name}/calls/summaries/` — recent customer calls
 - The previous bi-weekly review doc (carry-forward content)
 
 ## File Naming

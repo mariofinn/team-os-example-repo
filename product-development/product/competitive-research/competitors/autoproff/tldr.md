@@ -61,7 +61,7 @@ Active in: **Denmark, Sweden, Norway, Germany, Netherlands, Belgium, Italy, Slov
 
 ## Strengths to be aware of
 
-- **MG's Stefan already uses AUTOproff** as part of his current workflow ("Stefan manually exports CSV from Salesforce to AutoProf for every batch" — see [supplier-pain-points.md](../../../customers/research/supplier-pain-points.md)). Existing tool footprint at supplier compounds is a switching cost.
+- **MG's Stefan already uses AUTOproff** as part of his current workflow ("Stefan manually exports CSV from Salesforce to AutoProf for every batch" — see [supplier-pain-points.md](../../../suppliers/research/supplier-pain-points.md)). Existing tool footprint at supplier compounds is a switching cost.
 - AutoScout24 owns the largest pan-EU consumer car portal — combining that with a B2B auction stack is a serious distribution advantage on the buyer side.
 - Subscription model is sticky once dealers are onboarded.
 - Pre-sale window — MG is launching a pre-sale model with AUTOproff (3–4 months before physical return) — this is a distribution channel competitors haven't matched.
