@@ -15,7 +15,7 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 | Datadog | Monitoring, alerting, APM | Request access from your EM (Marco) |
 | PagerDuty | On-call rotation and incident management | Added by EM after first month |
 | AWS Console | Infrastructure (read access initially) | Request from EM |
-| Make.com | Low-code automation scenarios used by Operations | Request access if you'll touch ops scenarios (see scenario IDs in CLAUDE.md) |
+| Make.com / Celonis | Low-code automation scenarios used across Remarketing | Request access if you'll touch ops scenarios — see [`product-context/make-platform.md`](../../product-development/product/product-context/make-platform.md) |
 
 ### Repos
 

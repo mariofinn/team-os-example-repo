@@ -10,6 +10,7 @@ Reference documentation on FINN Remarketing systems and concepts that newcomers 
 | File | Description |
 |------|-------------|
 | `supplier-portal-pricing.md` | Pricing concepts: normalized price (Clean RV) vs. all-in price, how they relate in the supplier portal UI |
+| `make-platform.md` | Make.com / Celonis platform reference — what it is, how FINN uses it, where scenarios live, when to document |
 
 More reference docs land here as we formalize them — examples worth writing next: de-fleeting flow diagram, GHG quota mechanics, compound operations sequence, transport-orchestration model.
 

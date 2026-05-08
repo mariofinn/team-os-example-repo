@@ -17,7 +17,7 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 | Fivetran / data-ingestion stack | Ingestion pipelines | Request from Data Eng lead |
 | Airflow / Cloud Composer | Pipeline orchestration | Request from Data Eng lead |
 | GCP Console | BigQuery, Cloud Storage, Cloud Functions | Request from EM |
-| Make.com | Operational scenarios that produce data into BigQuery (see CLAUDE.md scenario list) | Request as needed |
+| Make.com / Celonis | Operational scenarios that produce data into BigQuery | Request as needed — see [`product-context/make-platform.md`](../../product-development/product/product-context/make-platform.md) |
 
 ### Repos
 
