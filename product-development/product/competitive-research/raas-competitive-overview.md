@@ -180,4 +180,5 @@ Allows suppliers to sell to a closed loop (e.g., own brand dealers) before openi
 | Feb 4, 2026 | Nissan Deutschland | Christoph Grossfengels, Nadja Schmidt | Confirmed: shared list needed at scale. Vehicle blocking without status visibility is an active problem. |
 | Feb 19, 2026 | Renault Deutschland | Kirsten Güther | 80% BCA, 15-year partnership. Compound via BLG Duisburg + DEKRA. Open to FINN pilot, March 1 pre-marketing target. |
 
-**Full synthesis:** `context-library/research/supplier-discovery-synthesis.md`
+**Full synthesis:** [`../customers/research/supplier-discovery-synthesis.md`](../customers/research/supplier-discovery-synthesis.md)
+**Per-competitor depth:** [`competitors/`](competitors/) — Auto1, BCA, CarOnSale, Autorola, SIXT CarHub
