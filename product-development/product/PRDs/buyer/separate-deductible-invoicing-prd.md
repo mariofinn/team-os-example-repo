@@ -2,9 +2,9 @@
 
 **Status:** Draft (Stage: Team Kickoff)
 **Author:** Mario Schiefer (PM) · Ana Costa (Product Engineer)
-**Pillar:** supplier
+**Pillar:** buyer
 **Last updated:** 2026-04-28 (Confluence v4)
-**Related:** [Confluence PRD](https://finn.atlassian.net/wiki/spaces/FP/pages/4824694814/PRD+Separate+Deductible+Invoicing) · [Solution Design](../../../engineering/rfcs/supplier/separate-deductible-invoicing-rfc.md) · [Confluence Design](https://finn.atlassian.net/wiki/spaces/FP/pages/4828463224/Design+Separate+Deductible+Invoicing) · Jira epic [FRT-1986](https://finn.atlassian.net/browse/FRT-1986)
+**Related:** [Confluence PRD](https://finn.atlassian.net/wiki/spaces/FP/pages/4824694814/PRD+Separate+Deductible+Invoicing) · [Solution Design](../../../engineering/rfcs/buyer/separate-deductible-invoicing-rfc.md) · [Confluence Design](https://finn.atlassian.net/wiki/spaces/FP/pages/4828463224/Design+Separate+Deductible+Invoicing) · Jira epic [FRT-1986](https://finn.atlassian.net/browse/FRT-1986)
 
 ---
 

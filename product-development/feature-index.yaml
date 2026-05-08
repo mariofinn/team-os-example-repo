@@ -36,12 +36,12 @@
 features:
   - id: separate-deductible-invoicing
     name: "Separate Deductible Invoicing"
-    pillar: supplier
+    pillar: buyer
     status: in-progress
     owner_pm: "Mario Schiefer"
     owner_eng: "Ana Costa"
-    prd: product-development/product/PRDs/supplier/separate-deductible-invoicing-prd.md
-    rfc: product-development/engineering/rfcs/supplier/separate-deductible-invoicing-rfc.md
+    prd: product-development/product/PRDs/buyer/separate-deductible-invoicing-prd.md
+    rfc: product-development/engineering/rfcs/buyer/separate-deductible-invoicing-rfc.md
     jira:
       - FRT-1986
       - FRT-1987

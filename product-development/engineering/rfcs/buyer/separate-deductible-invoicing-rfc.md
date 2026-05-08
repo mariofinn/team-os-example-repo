@@ -2,10 +2,10 @@
 
 **Status:** Draft
 **Author:** Ana Costa
-**Pillar:** supplier
+**Pillar:** buyer
 **Last updated:** 2026-04-28 (Confluence v10)
 **Reviewers:** Mario Schiefer (PM) · Marco Milovanovic (EM)
-**Related:** [PRD](../../../product/PRDs/supplier/separate-deductible-invoicing-prd.md) · [Confluence PRD](https://finn.atlassian.net/wiki/spaces/FP/pages/4824694814) · [Confluence Design](https://finn.atlassian.net/wiki/spaces/FP/pages/4828463224) · Jira epic [FRT-1986](https://finn.atlassian.net/browse/FRT-1986)
+**Related:** [PRD](../../../product/PRDs/buyer/separate-deductible-invoicing-prd.md) · [Confluence PRD](https://finn.atlassian.net/wiki/spaces/FP/pages/4824694814) · [Confluence Design](https://finn.atlassian.net/wiki/spaces/FP/pages/4828463224) · Jira epic [FRT-1986](https://finn.atlassian.net/browse/FRT-1986)
 
 ---
 
