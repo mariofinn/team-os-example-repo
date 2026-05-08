@@ -2,6 +2,10 @@
 
 Customer feedback, account context, and call notes for FINN Remarketing's named buyer and supplier accounts.
 
+## FINN-side ownership
+
+For who at FINN owns which commercial relationships (suppliers, buyers, BD, VP), see [`finn-commercial-ownership.md`](finn-commercial-ownership.md). When creating a new `account-context.md`, fill the `FINN owner (commercial)` field from that doc (suppliers) or from the HubSpot company-record owner (buyers).
+
 ## Account Types
 
 | Type | Folder | Who they are |

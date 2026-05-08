@@ -24,7 +24,7 @@ All pillar-organized folders use the same three subfolders: `supplier/`, `buyer/
 | Source | Description | Access |
 |--------|-------------|--------|
 | BigQuery | Primary data warehouse — vehicle lifecycle events, deal flow, compound operations, finance | SQL via Looker / direct query |
-| Looker | Self-serve dashboards, exploration | https://finn.looker.com (TBD — confirm URL with Victor) |
+| Looker | Self-serve dashboards, exploration | https://finngmbh.cloud.looker.com/ |
 | Amplitude | Product analytics — buyer/supplier portal funnels, retention, feature usage | Amplitude workspace |
 | HubSpot | CRM — supplier/buyer account data, deal pipeline, contact history | HubSpot dashboard + BigQuery sync |
 

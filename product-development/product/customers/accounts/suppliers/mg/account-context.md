@@ -3,7 +3,7 @@
 **Type:** supplier
 **Status:** discovery
 **FINN owner (PM):** Mario Schiefer
-**FINN owner (commercial):** [TBD]
+**FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
 **HubSpot:** [TBD]
 

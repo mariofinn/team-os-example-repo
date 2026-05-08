@@ -3,7 +3,7 @@
 **Type:** supplier | buyer
 **Status:** discovery | pilot | active | paused | churned
 **FINN owner (PM):** [Name]
-**FINN owner (commercial):** [Name]
+**FINN owner (commercial):** [Name — see [`../../finn-commercial-ownership.md`](../../finn-commercial-ownership.md)]
 **Last updated:** YYYY-MM-DD
 **HubSpot:** [link]
 
