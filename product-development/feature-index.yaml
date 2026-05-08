@@ -1,0 +1,36 @@
+# Feature Index — FINN Remarketing Tech
+#
+# Master lookup mapping every feature to its related artefacts. When you ship
+# something with a PRD, RFC, plan, schema, experiment, or Jira ticket, add an
+# entry here so the whole stack is discoverable from one place.
+#
+# Conventions:
+#  - `pillar` is one of: supplier | buyer | operations
+#  - `status` is one of: discovery | design | in-progress | shipped | deprecated
+#  - paths are repo-relative (no leading slash)
+#  - `jira` is a Jira issue key (e.g. FRT-123) or a list of keys
+#
+# Schema:
+#
+#   features:
+#     - id: short-stable-slug                       # e.g. supplier-onboarding-portal
+#       name: "Human-readable feature name"
+#       pillar: supplier | buyer | operations
+#       status: discovery | design | in-progress | shipped | deprecated
+#       owner_pm: "Mario Schiefer"
+#       owner_eng: "EM or eng lead"
+#       prd: product-development/product/PRDs/{pillar}/{slug}-prd.md
+#       rfc: product-development/engineering/rfcs/{pillar}/{slug}-rfc.md
+#       eng_plan: product-development/engineering/plans/{pillar}/{slug}.md
+#       data_pipeline: product-development/data-engineering/plans/{pillar}/{slug}.md
+#       schema: product-development/analytics/schemas/{pillar}/{slug}.md
+#       metrics: product-development/analytics/metrics/{pillar}/{slug}-metrics.md
+#       experiments:
+#         - product-development/analytics/experiments/{pillar}/{date}-{slug}-experiment-results.md
+#       jira:
+#         - FRT-123
+#         - FRT-456
+#       related_research:
+#         - product-development/product/customers/research/{file}.md
+
+features: []

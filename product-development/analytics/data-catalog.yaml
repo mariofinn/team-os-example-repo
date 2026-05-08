@@ -1,0 +1,30 @@
+# Data Catalog — FINN Remarketing Tech
+#
+# Registry of BigQuery datasets and tables that the team consumes or produces.
+# Use this so a new analyst / data engineer can find the right table fast,
+# and so we have a durable list of what each table is for and who owns it.
+#
+# Conventions:
+#  - `pillar` is one of: supplier | buyer | operations | shared
+#  - `refresh` is human-readable cadence (e.g. "hourly", "daily 03:00 UTC", "event-streaming")
+#  - `owner` is a person or team responsible — usually a single name
+#  - `source` describes where the data originates (Make.com scenario, app event, HubSpot sync, etc.)
+#
+# Schema:
+#
+#   datasets:
+#     - dataset: "finn-data-prod.remarketing"      # full BigQuery dataset path
+#       pillar: supplier | buyer | operations | shared
+#       owner: "Victor Franz"
+#       description: "What's in this dataset"
+#       tables:
+#         - table: "vehicle_events"
+#           description: "Lifecycle events for vehicles (intake -> sold)"
+#           refresh: "event-streaming"
+#           source: "buyer-portal app + Make.com scenarios"
+#           pii: false
+#           used_by:
+#             - product-development/analytics/queries/operations/cycle-time.sql
+#             - "Looker Explore: Remarketing > Vehicle Lifecycle"
+
+datasets: []
