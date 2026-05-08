@@ -5,7 +5,7 @@
 **FINN owner (PM):** Mario Schiefer
 **FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
-**HubSpot:** [TBD]
+**HubSpot:** [Nissan Deutschland GmbH](https://app.hubspot.com/contacts/6028262/record/0-2/2496806891)
 
 ---
 
@@ -21,7 +21,7 @@ One of the three active RaaS supplier discovery accounts. Stated supply willingn
 
 | Name | Role | Email | Notes |
 |------|------|-------|-------|
-| Christoph | Lead, FINN-side | [TBD] | Operations are outsourced to DEKRA — "operativ mach ich gar nix". Escalates large RV deviations to Finance Director. |
+| Christoph Grossfengels | Section Manager Used Car, Nissan Deutschland | [christoph.grossfengels@nissan.de](mailto:christoph.grossfengels@nissan.de) ([HubSpot](https://app.hubspot.com/contacts/6028262/record/0-1/98630591395)) | Operations are outsourced to DEKRA — "operativ mach ich gar nix". Escalates large RV deviations to Finance Director. |
 
 ## Goals / what they're trying to do with FINN
 

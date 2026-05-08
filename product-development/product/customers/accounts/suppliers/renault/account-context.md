@@ -5,7 +5,7 @@
 **FINN owner (PM):** Mario Schiefer
 **FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
-**HubSpot:** [TBD]
+**HubSpot:** [Renault Deutschland AG](https://app.hubspot.com/contacts/6028262/record/0-2/27318597186)
 
 ---
 
@@ -21,7 +21,7 @@ Active RaaS discovery account. Renault has launched a pre-marketing dealer-feedb
 
 | Name | Role | Email | Notes |
 |------|------|-------|-------|
-| Kirsten | Lead, FINN-side | [TBD] | Submits manual minimum prices to BCA monthly because FCM automation is broken. Finance team reviews every payment before release. |
+| Kirsten Güther | Remarketing Lead, Renault Deutschland AG (covers Renault, Dacia, Alpine) | [kirsten.guether@renault.de](mailto:kirsten.guether@renault.de) ([HubSpot](https://app.hubspot.com/contacts/6028262/record/0-1/14207091723)) | Submits manual minimum prices to BCA monthly because FCM automation is broken. Finance team reviews every payment before release. |
 
 ## Goals / what they're trying to do with FINN
 

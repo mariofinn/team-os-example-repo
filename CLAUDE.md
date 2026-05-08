@@ -25,12 +25,6 @@
 | #rem_tech_general | `C0411H0129E` | Public | General REM tech team channel |
 | #rem_tech_internal | `C042UHRUG2U` | Private | Internal REM tech team discussions |
 
-### DM Groups
-
-| Group | Members | ID | Purpose |
-|-------|---------|-----|---------|
-| TBD | TBD | TBD | TBD — add real FINN DM groups here |
-
 ## Doc Index
 
 **When looking up artifacts for a specific feature (PRDs, RFCs, plans, schemas, dashboards, experiments, tickets), check `product-development/feature-index.yaml` first.** It maps every feature to all related artifacts in one place.

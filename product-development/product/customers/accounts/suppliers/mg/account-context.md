@@ -5,13 +5,13 @@
 **FINN owner (PM):** Mario Schiefer
 **FINN owner (commercial):** Tim Hartdegen (Relationships) · Annalisa Pauli (Operations) — see [`../../../finn-commercial-ownership.md`](../../../finn-commercial-ownership.md)
 **Last updated:** 2026-05-08
-**HubSpot:** [TBD]
+**HubSpot:** [MG Motors DE](https://app.hubspot.com/contacts/6028262/record/0-2/5187292264)
 
 ---
 
 ## Who they are
 
-MG — OEM supplier prospect for FINN's Remarketing-as-a-Service offering. Manages 7,000+ remarketing vehicles with one full-time + half-time team (Stefan + 0.5 colleague). Ships data via manual Salesforce → AutoProf CSV exports today.
+MG — OEM supplier prospect for FINN's Remarketing-as-a-Service offering. Manages 7,000+ remarketing vehicles with one full-time + half-time team (Stefan Franzen + 0.5 colleague). Ships data via manual Salesforce → AutoProf CSV exports today.
 
 ## Why they matter to us
 
@@ -21,7 +21,7 @@ Most acute pain on the document/key/Fahrzeugschein side of any supplier we've sp
 
 | Name | Role | Email | Notes |
 |------|------|-------|-------|
-| Stefan | Lead, FINN-side | [TBD] | Auto-rejects/accepts pricing within thresholds, manually reviews in between. Manual relay between AutoProf and compound teams. |
+| Stefan Franzen | Used Car Manager, MG Motors DE | [stefan.franzen@mgmotor.de](mailto:stefan.franzen@mgmotor.de) ([HubSpot](https://app.hubspot.com/contacts/6028262/record/0-1/133524988234)) | Auto-rejects/accepts pricing within thresholds, manually reviews in between. Manual relay between AutoProf and compound teams. |
 
 ## Goals / what they're trying to do with FINN
 
@@ -51,7 +51,7 @@ Most acute pain on the document/key/Fahrzeugschein side of any supplier we've sp
 
 ## Insights & Learnings (running log)
 
-- **Lean team scale.** Stefan + 0.5 = 7,000+ vehicles. No tolerance for manual ops on the OEM side.
+- **Lean team scale.** Stefan Franzen + 0.5 = 7,000+ vehicles. No tolerance for manual ops on the OEM side.
 - **Salesforce wasn't configured for remarketing.** Required custom dev; misconfigured compound assignments caused logistics errors.
 - **Document fragmentation** is the most acute pain. Two compounds, no central system. High value in solving it.
 - **Pre-sale launch window** (3–4 months ahead of return) is the right place for FINN to integrate to get earlier supply.
