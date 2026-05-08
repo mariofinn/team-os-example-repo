@@ -19,7 +19,6 @@ product/
 ├── customers/                # Buyer + supplier account context, calls, research
 ├── competitive-research/     # Competitor audits — RaaS platforms, dealer auction tools
 ├── product-context/          # Reference docs for FINN Remarketing systems and concepts
-├── stakeholders/             # Stakeholder profiles (working styles, what they care about)
 ├── processes/                # Operational processes and writing-style guides
 ├── launch-emails/            # Launch communications
 ├── sales-enablement/         # Sales-/Ops-facing docs and onboarding
@@ -55,7 +54,7 @@ Each folder has its own `CLAUDE.md` with folder-specific context.
 | Supplier accounts | `customers/accounts/suppliers/` |
 | Customer research | `customers/research/` |
 | PRDs | `PRDs/CLAUDE.md` |
-| Stakeholder profiles | `stakeholders/CLAUDE.md` |
+| OEM-supplier partner intel | `customers/research/supplier-oem-stakeholder-profiles.md` |
 | Analytics | `../analytics/CLAUDE.md` |
 
 ---

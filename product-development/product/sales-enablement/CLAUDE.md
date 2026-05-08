@@ -19,5 +19,5 @@ Sales- and ops-facing documentation for the FINN Remarketing Tech products. Use 
 ## Related
 
 - Competitive positioning → `../competitive-research/CLAUDE.md`
-- Stakeholder profiles → `../stakeholders/CLAUDE.md`
+- OEM-supplier partner intel → `../customers/research/supplier-oem-stakeholder-profiles.md`
 - Writing style for customer-facing copy → `../processes/writing-styles/writing-style-customer.md`

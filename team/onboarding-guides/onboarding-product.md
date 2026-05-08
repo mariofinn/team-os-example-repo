@@ -40,7 +40,7 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 - [Customer Insights](../../product-development/product/customers/CLAUDE.md) — buyer + supplier accounts and research
 - [Competitive Research](../../product-development/product/competitive-research/CLAUDE.md)
 - [Strategy / OKRs](../../product-development/product/strategy/CLAUDE.md)
-- [Stakeholders](../../product-development/product/stakeholders/CLAUDE.md)
+- OEM-supplier partner intel: [`customers/research/supplier-oem-stakeholder-profiles.md`](../../product-development/product/customers/research/supplier-oem-stakeholder-profiles.md)
 
 ## Slack Channels
 
@@ -59,7 +59,7 @@ Additional FINN product / customer Slack channels — your manager will add you.
 | Marco Milovanovic | EM — sprint process, engineering capacity |
 | Iryna Lysenko | Principal Designer — design system, review process |
 | Victor Franz | BI — metrics, dashboards, data questions |
-| Bernhardt | VP of Remarketing — domain context, business stakes (read the [stakeholder profile](../../product-development/product/stakeholders/stakeholder-bernhardt.md) first) |
+| Bernhardt | VP of Remarketing — domain context, business stakes |
 
 ## First Tasks
 

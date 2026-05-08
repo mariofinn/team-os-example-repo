@@ -47,6 +47,7 @@ To be backfilled from December 2025 buyer call notes.
 | `research/supplier-discovery-synthesis.md` | Synthesis of supplier discovery interviews |
 | `research/buyer-portal-context.md` | Buyer portal product context — Dealer Portal Refactoring (Retool → Pro-Code) |
 | `research/competitive-raas-platforms.md` | Competitive landscape for RaaS platforms |
+| `research/supplier-oem-stakeholder-profiles.md` | OEM-side partner contacts (Nissan/Renault/MG): roles, operating models, what they value |
 
 ## Processing Customer Calls
 
