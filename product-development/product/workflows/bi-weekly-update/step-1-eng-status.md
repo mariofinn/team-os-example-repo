@@ -2,7 +2,7 @@
 
 ## Goal
 
-Produce the "What the Team Is Building Now" section with OKR tables showing current workstream status.
+Produce the "What the Team Is Building Now" section with OKR/workstream tables showing current status.
 
 ---
 
@@ -10,41 +10,23 @@ Produce the "What the Team Is Building Now" section with OKR tables showing curr
 
 ### 1. Pull completed tickets
 
-Query the ticketing system for issues completed in the last 2 weeks.
+Query Jira for issues completed in the last 2 weeks.
 
 **Filters:**
-- Team: Forge
-- State: completed
-- Updated: last 2 weeks from today's date
+- Project: `FRT`
+- Board: 245
+- Status: completed (Done / Released / equivalent terminal status)
+- Updated: last 14 days
 
 ### 2. Map issues to OKR workstreams
 
-Categorize each completed issue into one of the three OKR objectives:
+Read the current trimester OKR file (`../../strategy/okrs-tN-YYYY.md`). Categorize each completed Jira issue into the relevant Key Result / workstream.
 
-**Generation Quality (OKR 1):**
-- Multi-Page App Generation
-- Component Library Support
-- State Management Patterns
-- Design Token Integration
-- Responsive Layout Engine
-
-**Enterprise & Deployment (OKR 2):**
-- SSO / SAML Integration
-- Audit Logging
-- Team Workspaces
-- CI/CD Pipeline
-- Environment Management
-
-**Platform & Integrations (OKR 3):**
-- Git Provider Integration (GitHub, GitLab)
-- Database Connectors
-- Auth Provider Support
-- Plugin / Extension API
-- Cloud Provider Export (AWS, GCP, Azure)
+If an issue doesn't map cleanly, surface it for the PM in the interactive part.
 
 ### 3. Generate draft status tables
 
-For each workstream, draft a status update based on what was completed and what appears to be in progress. Use the OKR table format from the reference file.
+For each Key Result / workstream, draft a status update based on what was completed and what appears to be in progress (not-yet-done tickets in active sprints).
 
 ---
 
@@ -53,24 +35,23 @@ For each workstream, draft a status update based on what was completed and what 
 ### 4. Present ticket summary to PM
 
 Show:
-- List of completed issues grouped by workstream
+- List of completed issues grouped by workstream / KR
 - Any issues that don't map cleanly to existing workstreams
 - Draft status tables
 
 ### 5. Ask for additional context
 
-Prompt: **"Dump any additional context: decisions made, meeting notes, things not in tickets, status changes I should know about."**
+Prompt: **"Dump any additional context — decisions, meeting outcomes, status changes, things not in tickets."**
 
-The PM will provide a single context dump. This is the primary source for nuanced status updates that the ticketing system can't capture (e.g., "Design complete but eng hasn't started" or "Blocked on external dependency").
+The PM will provide a single context dump. This is the primary source for nuanced status updates that Jira can't capture (e.g., "Design complete but eng hasn't started" or "Blocked on legal review of the Nissan contract").
 
 ### 6. Synthesize and draft
 
 Combine ticket data + PM's context into the full "What the Team Is Building Now" section:
-- Opening paragraph describing quarterly objectives
-- OKR 1 table (Generation Quality)
-- OKR 2 table (Enterprise & Deployment)
-- OKR 3 table (Platform & Integrations)
+- Opening paragraph framing the trimester's objectives
+- One table per Key Result / workstream
 - "Designs Complete" list (if applicable)
+- Pillar-level rollups if useful (supplier / buyer / operations)
 
 ### 7. Write to output file
 
@@ -81,31 +62,21 @@ Write the section to the dated output file. Present draft for review before movi
 ## Output Format
 
 ```markdown
-# [Month] 2026: What the Team Is Building Now
+# {Month YYYY}: What the Team Is Building Now
 
-[Opening paragraph: Forge has three objectives this quarter...]
+[Opening paragraph: What we're trying to move this trimester, anchored to the OKRs.]
 
-## Generation Quality (OKR 1)
+## {KR1 name}
 
-**Goal:** [Goal from OKRs]
-
-[Context paragraph if needed]
+**Goal:** [from OKRs]
 
 | Workstream | Why It Matters | Status |
 |---|---|---|
 | **[Workstream]** | [Business impact] | [Current status] |
 
-## Enterprise & Deployment (OKR 2)
+## {KR2 name}
 
-**Goal:** [Goal from OKRs]
-
-| Workstream | Why It Matters | Status |
-|---|---|---|
-| **[Workstream]** | [Business impact] | [Current status] |
-
-## Platform & Integrations (OKR 3)
-
-**Goal:** [Goal from OKRs]
+**Goal:** [from OKRs]
 
 | Workstream | Why It Matters | Status |
 |---|---|---|
@@ -121,6 +92,6 @@ Write the section to the dated output file. Present draft for review before movi
 
 ## Notes
 
-- The OKR goals themselves don't change within a quarter. Only the workstream rows and status column change.
-- If a new workstream appears (not in previous cycle), add it to the appropriate OKR table and flag it to the PM.
+- The OKR goals don't change within a trimester. Only the workstream rows and status column change cycle to cycle.
+- If a new workstream appears (not in previous cycle), add it and flag it to the PM.
 - If a workstream is complete and shipped, move it out of the table and note it in the opening paragraph or a "Shipped" section.

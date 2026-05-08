@@ -1,6 +1,6 @@
 # Onboarding: Product
 
-Product-specific setup and orientation for PMs joining Forge.
+Product-specific setup and orientation for PMs joining FINN Remarketing Tech.
 
 ## Setup
 
@@ -12,59 +12,60 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 
 | Tool | Purpose | Access |
 |------|---------|--------|
-| Amplitude | Product analytics, funnels, retention | Request access from Grace Lin |
-| Figma | Design files (edit access) | Request upgrade from Emily Zhao |
-| Granola | AI meeting notes | Team license - request from manager |
+| Amplitude | Product analytics, funnels, retention | Request access from Victor Franz |
+| HubSpot | CRM — supplier/buyer pipeline, contacts | Request access from Sales Ops |
+| Looker | Self-serve dashboards | Request access from Victor Franz |
+| Figma | Design files (edit access) | Request upgrade from Iryna Lysenko |
+| Granola | AI meeting notes for customer calls | Team license — request from manager |
 
 ### Repos
 
 | Repo | Why |
 |------|-----|
-| `forge-product` | PRDs, strategy, customer insights, launch docs |
-| `forge-app` | Understand frontend/backend to write better specs |
+| `finn-auto/team-os-example-repo` | This repo — PRDs, strategy, customer insights, launch docs |
+| Pillar app repos | Skim the buyer/supplier portal repos to ground your specs in current state |
 
 ### Environment Setup
 
 1. Complete [General Onboarding](onboarding-general.md) setup first
-2. Get Amplitude access and bookmark the [Forge dashboard](../product/analytics/dashboards.md)
-3. Get Figma edit access and review the [design system](../product/PRDs/forge/design-patterns/CLAUDE.md)
+2. Get Amplitude + Looker access; explore existing Remarketing dashboards
+3. Get Figma edit access and skim the active design files for buyer + supplier portals
 4. Set up Granola for meeting note capture
+5. Read the active PRDs (linked from [PRDs/CLAUDE.md](../../product-development/product/PRDs/CLAUDE.md)) and the most recent bi-weekly review
 
 ## Key Documents
 
-- [Product CLAUDE.md](../product/CLAUDE.md) - product context, pillars, segments, competitive landscape
-- [PRD Index](../product/PRDs/forge/CLAUDE.md) - all product requirement documents
-- [Customer Insights](../product/customers/forge/CLAUDE.md) - call summaries, verbatims, feature requests
-- [Competitive Research](../product/competitive-research/forge/CLAUDE.md) - competitor intel and comparisons
-- [Strategy Docs](../product/strategy/forge/CLAUDE.md) - roadmaps, vision, business context
+- [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology, key docs
+- [PRD index](../../product-development/product/PRDs/CLAUDE.md)
+- [Customer Insights](../../product-development/product/customers/CLAUDE.md) — buyer + supplier accounts and research
+- [Competitive Research](../../product-development/product/competitive-research/CLAUDE.md)
+- [Strategy / OKRs](../../product-development/product/strategy/CLAUDE.md)
+- [Stakeholders](../../product-development/product/stakeholders/CLAUDE.md)
 
 ## Slack Channels
 
 | Channel | Purpose |
 |---------|---------|
-| `#forge-product` | Product discussions, customer feedback, roadmap |
-| `#forge-general` | Team-wide announcements |
-| `#forge-eng` | Stay close to engineering decisions |
-| `#forge-design` | Design reviews and feedback |
+| `#rem_tech_general` | Team-wide announcements and discussion |
+| `#rem_tech_internal` | Internal team discussions |
+
+Additional FINN product / customer Slack channels — your manager will add you.
 
 ## People to Meet
 
 | Person | Why |
 |--------|-----|
-| Jordan Reeves | PM peer - current product priorities and context |
-| Alex Chen | PM peer - strategy and planning |
-| Emily Zhao | Design lead - design system, review process |
-| Grace Lin | Analytics - metrics, dashboards, data questions |
-| Casey Nguyen | Analytics partner for Forge |
-
-## Org Chart
-
-Product reports to the Head of Product. Cross-functional partners: Engineering (EM: Alex Rivera), Design (Taylor Brooks, Jamie Ortiz), Analytics (Casey Nguyen), Strategy & Ops (Drew Martinez).
+| Fabian Brossok | Product Lead — strategy, priorities |
+| Marco Milovanovic | EM — sprint process, engineering capacity |
+| Iryna Lysenko | Principal Designer — design system, review process |
+| Victor Franz | BI — metrics, dashboards, data questions |
+| Bernhardt | VP of Remarketing — domain context, business stakes (read the [stakeholder profile](../../product-development/product/stakeholders/stakeholder-bernhardt.md) first) |
 
 ## First Tasks
 
-- [ ] Read the 3 most recent PRDs to understand current product direction
-- [ ] Shadow a customer call (check the [customer insights](../product/customers/forge/CLAUDE.md) for upcoming calls)
-- [ ] Review the competitive landscape doc
-- [ ] Meet with your PM peers (Jordan, Alex) for context transfer
-- [ ] Pick up a small product task from the current sprint in Linear / Jira / Asana
+- [ ] Read the most recent PRDs (use the [PRD index](../../product-development/product/PRDs/CLAUDE.md))
+- [ ] Shadow a customer call (buyer or supplier — ask Mario for upcoming ones)
+- [ ] Read the [supplier discovery synthesis](../../product-development/product/customers/research/supplier-discovery-synthesis.md) and [supplier pain points](../../product-development/product/customers/research/supplier-pain-points.md)
+- [ ] Review the [competitive RaaS landscape](../../product-development/product/customers/research/competitive-raas-platforms.md)
+- [ ] Meet with Fabian and Marco for context transfer
+- [ ] Pick up a small product task from Jira `FRT`

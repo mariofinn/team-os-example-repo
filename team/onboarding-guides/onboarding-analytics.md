@@ -1,6 +1,6 @@
 # Onboarding: Analytics
 
-Analytics-specific setup and orientation for analysts joining Forge.
+Analytics-specific setup and orientation for analysts joining FINN Remarketing Tech.
 
 ## Setup
 
@@ -12,59 +12,59 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 
 | Tool | Purpose | Access |
 |------|---------|--------|
-| Snowflake | Data warehouse, SQL queries | Request access from Grace Lin |
-| Amplitude | Product analytics, funnels, retention | Request access from Grace Lin |
-| Mode / Sigma | Data dashboards and reporting | Links in [dashboards.md](../product/analytics/dashboards.md) |
-| dbt | Data transformations (read access) | Access via `forge-data` repo |
+| BigQuery | Data warehouse, SQL queries | Request access from Victor Franz |
+| Looker | Dashboards, exploration, modeled metrics | Request access from Victor Franz |
+| Amplitude | Product analytics for buyer/supplier portal funnels | Request access from Victor Franz |
+| HubSpot | CRM data — pipeline, contacts, deals | Request access from Sales Ops |
+| dbt | Data transformations (read access) | Confirm with Data Eng |
 
 ### Repos
 
 | Repo | Why |
 |------|-----|
-| `forge-product` | Analytics docs, metric definitions, dashboard specs |
-| `forge-data` | dbt models, pipeline configs, schema definitions |
+| `finn-auto/team-os-example-repo` | Analytics docs, metric definitions, investigation write-ups |
+| `finn-auto/<dbt-repo>` | dbt models, schema definitions (confirm repo name with Data Eng) |
 
 ### Environment Setup
 
 1. Complete [General Onboarding](onboarding-general.md) setup first
-2. Get Snowflake access and connect your SQL client
-3. Get Amplitude access and explore existing dashboards
-4. Review the [analytics schemas](../product/analytics/CLAUDE.md) for table structures
-5. Bookmark key dashboards in Mode/Sigma
+2. Get BigQuery access and connect your SQL client
+3. Get Looker access and bookmark the Remarketing dashboards
+4. Get Amplitude access and explore existing portal funnels
+5. Skim [analytics/CLAUDE.md](../../product-development/analytics/CLAUDE.md) and the data catalog for table structures
 
 ## Key Documents
 
-- [Analytics CLAUDE.md](../product/analytics/CLAUDE.md) - metrics glossary, data sources, common queries, RFCs
-- [Dashboards](../product/analytics/dashboards.md) - existing dashboards and links
-- [Product CLAUDE.md](../product/CLAUDE.md) - product context, pillars, segments
-- [Customer Insights](../product/customers/forge/CLAUDE.md) - qualitative data to pair with quantitative
+- [Analytics CLAUDE.md](../../product-development/analytics/CLAUDE.md) — metrics, data sources, common queries
+- [data-catalog.yaml](../../product-development/analytics/data-catalog.yaml) — BigQuery dataset/table registry
+- [Funnel-analysis playbook](../../product-development/analytics/playbooks/funnel-analysis.md)
+- [OKRs](../../product-development/product/strategy/okrs-t2-2026.md) — KPI tree and what we're moving
+- [Customer Insights](../../product-development/product/customers/CLAUDE.md) — qualitative data to pair with quantitative
 
 ## Slack Channels
 
 | Channel | Purpose |
 |---------|---------|
-| `#forge-product` | Product discussions where data questions arise |
-| `#forge-general` | Team-wide announcements |
-| `#forge-eng` | Engineering context for instrumentation questions |
+| `#rem_tech_general` | Where data questions usually surface |
+| `#rem_tech_internal` | Internal team discussions |
+
+Plus FINN-wide BI / data channels — Victor will add you.
 
 ## People to Meet
 
 | Person | Why |
 |--------|-----|
-| Grace Lin | Analytics lead - metrics, dashboards, data access |
-| Casey Nguyen | Analytics partner for Forge - current projects and context |
-| Hannah Stulberg | PM - product priorities, what metrics matter most |
-| Drew Martinez | Strategy & Ops - business metrics and reporting |
-
-## Org Chart
-
-Analytics partners with Product and Strategy & Ops. Primary PM partner: Hannah Stulberg. Strategy & Ops partner: Drew Martinez. Data engineering partners maintain the pipelines that feed your dashboards.
+| Victor Franz | Senior BI Manager — metrics, dashboards, data access |
+| David Burgschwaiger | Staff Data Analyst — current investigations, dashboards |
+| Mathilde Rychel | Associate Data Analyst — analytics peer |
+| Mario Schiefer | PM — what metrics matter most this trimester |
+| Lucy Mueller | Strategy & BI intern — partner on cross-team analyses |
 
 ## First Tasks
 
-- [ ] Get Snowflake access and run a sample query against the generation events table
-- [ ] Review the metrics glossary and key metric definitions
-- [ ] Explore 2-3 existing dashboards to understand current reporting
-- [ ] Meet with Casey for context transfer on current analytics projects
+- [ ] Get BigQuery access and run a sample query against a Remarketing event table
+- [ ] Review the metrics in [analytics/CLAUDE.md](../../product-development/analytics/CLAUDE.md) and the OKR KPI tree
+- [ ] Explore 2–3 existing Looker dashboards to understand current reporting
+- [ ] Meet with Victor + David for context transfer on current analytics projects
 - [ ] Reproduce one existing analysis to validate your understanding of the data
-- [ ] Pick up a small analytics task from Linear / Jira / Asana (your manager will assign one)
+- [ ] Pick up a small analytics task from Jira `FRT`

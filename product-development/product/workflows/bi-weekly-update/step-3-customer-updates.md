@@ -2,7 +2,7 @@
 
 ## Goal
 
-Update customer pilot/launch exec summaries, deep dives, and cross-customer summary if new call data changes the narrative.
+Update customer / pilot exec summaries, deep dives, and the cross-customer summary if new call data changes the narrative.
 
 ---
 
@@ -10,11 +10,9 @@ Update customer pilot/launch exec summaries, deep dives, and cross-customer summ
 
 ### 1. Identify customers with new calls
 
-Check which active pilot and enterprise customers had calls in the last 2 weeks (from Step 2 data). Current active pilots:
-- Meridian Health (healthcare SaaS, 12-person eng team)
-- CloudKitchen (restaurant ops platform, 8-person eng team)
-- Nexus Financial (fintech startup, 20-person eng team)
-- Aether Logistics (supply chain platform, 15-person eng team)
+Check which active suppliers and buyers had calls in the last 2 weeks (from Step 2 data).
+
+The list of "active" accounts changes — read each account's `account-context.md` to determine current pilot/onboarding/active status. Don't hardcode account names here; let the folder structure under `../../customers/accounts/` be the source of truth.
 
 ### 2. Compare new data against existing sections
 
@@ -25,7 +23,7 @@ For each customer with a new call, read the existing exec summary and deep dive 
 - **New feature gaps** surfaced in the call
 - **Changed satisfaction signals** (more positive, more negative, or new concerns)
 - **New quotes** that are stronger than existing ones
-- **Status changes** (e.g., pilot expanded, timeline shifted, new stakeholders)
+- **Status changes** (pilot expanded, timeline shifted, new stakeholders, etc.)
 
 ### 3. Flag changes
 
@@ -60,7 +58,7 @@ If the PM approves updates:
 If customer sections changed, check whether the cross-customer summary still accurately reflects:
 - Shared feature gaps
 - Conversion path
-- Enterprise buyer ICP characterization
+- Buyer / supplier ICP characterization
 
 Ask: **"The cross-customer summary currently says [X]. Based on [new data], should we update it?"**
 
@@ -80,14 +78,14 @@ Write updated customer sections and cross-customer summary to the dated output f
 
 ### Rewrite
 - Exec summary opening paragraph (should reflect current state)
-- "Forge Use Cases Today" if new use cases emerged
+- "Use Cases Today" if new use cases emerged
 - Feature gap status if engineering progress changed the situation
 - Any section where a stronger quote replaced a weaker one
 
 ### Add new
 - New feature gaps surfaced in calls
 - New pain points or use cases observed
-- New pilot customers
+- New pilot or active accounts
 
 ---
 
@@ -95,16 +93,16 @@ Write updated customer sections and cross-customer summary to the dated output f
 
 The cross-customer summary sits between "Customer Calls" and the first customer section. It covers:
 
-1. **Combined business impact** (teams, ARR, % of goal)
-2. **Shared buyer persona** (engineering lead / CTO characterization)
+1. **Combined business impact** (volume, revenue / GHG-quota / GPU contribution, % of OKR target)
+2. **Shared persona** (supplier-side OEM characterization or buyer-side dealer characterization)
 3. **Shared feature gaps** (table with per-customer needs and status)
-4. **Emerging product direction** (enterprise buyer ICP, next investment areas)
+4. **Emerging product direction** (next investment areas)
 5. **Per-customer unique needs** (bullets)
 
 ---
 
 ## Notes
 
-- Customer sections are the most labor-intensive part of the bi-weekly. Most cycles, they'll need only minor updates or none at all.
+- Customer sections are the most labor-intensive part of the bi-weekly. Most cycles need only minor updates or none at all.
 - If a customer hasn't had a call in the last 2 weeks, carry forward the existing sections unchanged.
-- If a new customer becomes a pilot, create a new exec summary and deep dive following the Meridian/CloudKitchen format.
+- If a new customer becomes a pilot, create a new exec summary and deep dive following the format of the most recent active pilot.

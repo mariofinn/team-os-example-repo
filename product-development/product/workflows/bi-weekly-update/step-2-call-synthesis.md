@@ -10,17 +10,20 @@ Produce the "Customer Calls" section with a customer overview table, thematic an
 
 ### 1. Find recent call summaries
 
-Scan `product/customers/calls/summaries/` for files modified in the last 2 weeks. Read each one.
+Scan `../../customers/accounts/suppliers/*/calls/summaries/` and `../../customers/accounts/buyers/*/calls/summaries/` for files dated in the last 2 weeks. Read each one.
 
 ### 2. Categorize customers
 
-For each customer with a recent call, determine their category:
-- **Paying customer** - signed and paying for Forge
-- **Pilot** - active pilot, not yet paying
-- **Pipeline** - in pipeline, being pitched
-- **Free tier** - on free plan, potential upsell
+For each customer with a recent call, determine the category (see [workflow-spec.md](workflow-spec.md#customer-categorization)):
 
-Cross-reference `product/customers/forge-customer-overview.md` if unsure about customer status.
+- Supplier — pilot
+- Supplier — discovery
+- Buyer — active
+- Buyer — pilot
+- Buyer — pipeline
+- Internal
+
+If unsure, check the customer's `account-context.md`.
 
 ### 3. Extract from each call
 
@@ -30,7 +33,7 @@ For each call summary, extract:
 - **Key quotes** (verbatim, with speaker attribution)
 - **Product satisfaction signals** (positive or negative)
 - **Product feedback / feature requests**
-- **Workflow themes** (generation quality, deployment pain, collaboration needs, enterprise requirements)
+- **Workflow themes** (pricing, supplier onboarding, dealer search, transport, compound throughput, document handling, etc.)
 
 ### 4. Draft sections
 
@@ -38,17 +41,17 @@ Generate three sections:
 
 **Customer Overview Table:**
 
-| Customer | Date | Category | Takeaway |
-|---|---|---|---|
-| [Name] | MM/DD | [Category] | [One-line takeaway] |
+| Customer | Type | Date | Category | Takeaway |
+|---|---|---|---|---|
+| [Name] | Supplier/Buyer | YYYY-MM-DD | [Category] | [One-line takeaway] |
 
 **What We're Hearing:**
 - Product satisfaction paragraph with supporting quotes
 - Thematic analysis paragraph (identify patterns across customers)
-  - Look for: workflow themes, buyer persona patterns, feature gap patterns
+  - Look for: workflow themes, persona patterns, feature gap patterns
 
 **Highlights:**
-- Numbered list of 5-8 key insights
+- Numbered list of 5–8 key insights
 - Each insight: bold headline + one sentence of context
 - Include customer name and specific evidence
 
@@ -68,23 +71,21 @@ Show "What We're Hearing" and "Highlights" for review. The PM will refine framin
 
 ### 7. Write to output file
 
-Write the section to the dated output file immediately after approval. Don't wait for Steps 3-5.
+Write the section to the dated output file immediately after approval. Don't wait for Steps 3–5.
 
 ---
 
 ## Output Format
 
 ```markdown
-# Customer Calls: [Start Date] - [End Date]
+# Customer Calls: {start_date} – {end_date}
 
-| Customer | Date | Category | Takeaway |
-|---|---|---|---|
-| [Name] | MM/DD | [Category] | [One-line takeaway] |
+| Customer | Type | Date | Category | Takeaway |
+|---|---|---|---|---|
 
 ## What We're Hearing
 
 **[Theme 1 headline.]** [Supporting paragraph with quotes.]
-- [Sub-theme]: [Detail with customer examples]
 - [Sub-theme]: [Detail with customer examples]
 
 **[Theme 2 headline.]** [Supporting paragraph.]
@@ -94,7 +95,6 @@ Write the section to the dated output file immediately after approval. Don't wai
 
 1. **[Bold headline.]** [One sentence with customer name and evidence.]
 2. **[Bold headline.]** [One sentence.]
-...
 ```
 
 ---

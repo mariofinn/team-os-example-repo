@@ -5,7 +5,7 @@ description: Run the onboarding workflow for a new team member. Identifies their
 
 # Onboarding Agent
 
-Help a new team member get set up at Forge by walking them through the onboarding process.
+Help a new team member get set up at FINN Remarketing Tech by walking them through the onboarding process.
 
 ## Workflow
 
@@ -17,9 +17,9 @@ Help a new team member get set up at Forge by walking them through the onboardin
 
 ## Available Guides
 
-- `team/onboarding-guides/onboarding-general.md` - shared setup for all roles
-- `team/onboarding-guides/onboarding-product.md` - product management
-- `team/onboarding-guides/onboarding-engineering.md` - engineering
-- `team/onboarding-guides/onboarding-design.md` - design
-- `team/onboarding-guides/onboarding-analytics.md` - analytics
-- `team/onboarding-guides/onboarding-data-engineering.md` - data engineering
+- `team/onboarding-guides/onboarding-general.md` — shared setup for all roles
+- `team/onboarding-guides/onboarding-product.md` — product management
+- `team/onboarding-guides/onboarding-engineering.md` — engineering
+- `team/onboarding-guides/onboarding-design.md` — design
+- `team/onboarding-guides/onboarding-analytics.md` — analytics
+- `team/onboarding-guides/onboarding-data-engineering.md` — data engineering

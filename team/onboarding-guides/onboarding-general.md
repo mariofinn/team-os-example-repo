@@ -1,6 +1,6 @@
 # Onboarding: General
 
-This guide covers setup and orientation common to all new Forge team members. Role-specific guides are linked at the bottom.
+This guide covers setup and orientation common to all new FINN Remarketing Tech team members. Role-specific guides are linked at the bottom.
 
 ## Setup
 
@@ -8,74 +8,65 @@ This guide covers setup and orientation common to all new Forge team members. Ro
 
 | Tool | Purpose | Access |
 |------|---------|--------|
-| GitHub | Code, PRs, CI/CD | `forge-labs` org invite |
-| Linear / Jira / Asana | Issue tracking, sprints | `Forge` team invite |
-| Slack | Communication | Forge Labs workspace invite |
+| GitHub | Code, PRs, CI/CD | `finn-auto` org invite |
+| Jira | Issue tracking, sprints, roadmap | Project `FRT` (board 245) |
+| Confluence | Legacy long-form docs (being replaced by this repo) | FP space — [Remarketing Tech home](https://finn.atlassian.net/wiki/spaces/FP/pages/2319581284/Remarketing+Tech) |
+| Slack | Communication | FINN workspace invite |
 | Google Workspace | Docs, email, calendar | Auto-provisioned |
-| Figma | Design files, prototypes (view access) | `Forge Labs` workspace invite |
-
-### Function-Specific Tools
-
-See your role-specific onboarding guide for additional tools.
+| Figma | Design files, prototypes (view access) | FINN workspace invite |
+| Granola | AI meeting notes for customer calls | Team license — request from manager |
 
 ### Repos
 
 | Repo | Description |
 |------|-------------|
-| `forge-app` | Main application (frontend + backend API) |
-| `forge-ai` | AI generation pipeline and model serving |
-| `forge-infra` | Terraform, Kubernetes configs, CI/CD |
-| `forge-docs` | Public documentation site |
-| `forge-product` | This repo - product docs, PRDs, strategy |
+| `finn-auto/team-os-example-repo` | This repo — team brain (PRDs, plans, strategy, customer notes, onboarding) |
+| Other `finn-auto/*` repos | Application code and infra — your role guide lists the ones you'll touch |
 
 ### Environment Setup
 
 1. Get laptop provisioned and accounts set up (IT will walk you through this)
-2. Accept invitations to GitHub (`forge-labs` org), Linear / Jira / Asana (`Forge` team), Slack, and Google Workspace
-3. Set up local development environment (follow `CONTRIBUTING.md` in the main repo)
-4. Complete a test generation on staging and deploy it
+2. Accept invitations to GitHub (`finn-auto`), Atlassian (Jira FRT, Confluence FP), Slack, Google Workspace, and Figma
+3. Clone this repo and read the root [CLAUDE.md](../../CLAUDE.md) for the team table
+4. Set up Granola for meeting note capture
+5. Set up local dev environment (follow your role-specific guide)
 
 ## Key Documents
 
-- [Platform Overview](../product/product-context/forge-platform-overview.md) - what Forge does
-- [Business Info](../product/strategy/business-context/forge-business-info.md) - company context
+- [FINN business info](../../product-development/product/strategy/business-context/finn-business-info.md) — company context
+- [Remarketing OKRs (current trimester)](../../product-development/product/strategy/okrs-t2-2026.md)
+- [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology, key docs
+- [Stakeholders](../../product-development/product/stakeholders/CLAUDE.md) — who cares about what
 
 ## Slack Channels
 
 | Channel | Purpose |
 |---------|---------|
-| `#forge-general` | Team-wide announcements and discussion |
-| `#forge-eng` | Engineering discussion, architecture decisions |
-| `#forge-eng-standup` | Daily async standup posts |
-| `#forge-product` | Product discussions, customer feedback, roadmap |
-| `#forge-incidents` | Production incidents and on-call alerts |
-| `#forge-deploys` | Automated deploy notifications |
+| `#rem_tech_general` (`C0411H0129E`) | Public team channel — announcements, cross-team discussion |
+| `#rem_tech_internal` (`C042UHRUG2U`) | Private internal team channel |
+
+Additional FINN-wide channels (announcements, incidents, etc.) — your manager will point you to the relevant ones during week 1.
 
 ## People to Meet
 
-Your manager will pair you with an onboarding buddy on your first day.
+Your manager will pair you with an onboarding buddy on your first day. The full team table lives in the root [CLAUDE.md](../../CLAUDE.md). Highlights:
 
 | Person | Role |
 |--------|------|
-| Jordan Reeves | Product questions |
-| Alex Chen | Product questions |
-| Sam Torres | Engineering architecture |
-| Priya Patel | Engineering architecture |
-| Emily Zhao | Design system |
-| Grace Lin | Data and analytics |
-
-## Org Chart
-
-See your manager for current org chart and reporting structure. Cross-functional partners vary by role - check your role-specific guide.
+| Fabian Brossok | Product Lead, Remarketing |
+| Mario Schiefer | PM, Remarketing Tech |
+| Marco Milovanovic | Engineering Manager |
+| Iryna Lysenko | Principal Designer |
+| Victor Franz | Senior BI Manager |
 
 ## First Tasks
 
 - [ ] Accept all tool invitations and verify access
-- [ ] Join all Slack channels listed above
-- [ ] Read the three Key Documents
+- [ ] Join `#rem_tech_general` and `#rem_tech_internal`
+- [ ] Read the Key Documents above
 - [ ] Meet your onboarding buddy
-- [ ] Attend your first standup and sprint planning (async standup daily, sync planning biweekly)
-- [ ] Ship a small starter task (your manager will assign one in Linear / Jira / Asana)
+- [ ] Attend your first standup and bi-weekly review
+- [ ] Pick up a small starter task from Jira `FRT` (your manager will assign one)
 
 ## Role-Specific Guides
 

@@ -1,37 +1,37 @@
 # Customer Call Transcript Processing
 
-You are an expert at processing customer call transcripts and extracting key insights for product management.
+You are an expert at processing customer call transcripts and extracting key insights for product management at FINN Remarketing Tech.
 
-**Summary guidelines:** Read `.claude/skills/customer-call-summary/SKILL.md` for detailed formatting instructions and examples.
+**Summary guidelines:** Read `.claude/skills/customer-call-summary/SKILL.md` for detailed formatting instructions.
 
 ## Task Overview
 
 Process a customer call transcript by:
-1. Determining the product area
+1. Determining the customer type (buyer or supplier)
 2. Checking for existing customer files
 3. Managing action items (update existing, add new, ask about unclear status)
 4. Creating separate summary and transcript files with cross-references
 5. Generating a comprehensive, detailed summary
 
-## Step 1: Determine Product Area
+## Step 1: Determine Customer Type
 
-Ask the user which product area this call relates to (or infer from context):
-- **Forge** (AI Prototyping)
-- **Forge Studio**
-- **Forge Deploy**
-- **Forge Analytics**
+Ask the user which customer type this call relates to (or infer from context):
+
+- **Supplier** — RaaS supplier conversations (OEMs / leasing partners — e.g. Nissan, Renault, MG)
+- **Buyer** — B2B buyer / dealer conversations
 
 Base paths for customer calls:
+
 ```
-product areas/AI Prototyping (Forge)/customers/calls/
-product areas/Forge Studio/customer-calls/
-product areas/Forge Deploy/customer-calls/
-product areas/Forge Analytics/customer-calls/
+product-development/product/customers/accounts/suppliers/{name}/calls/summaries/
+product-development/product/customers/accounts/suppliers/{name}/calls/transcripts/
+product-development/product/customers/accounts/buyers/{name}/calls/summaries/
+product-development/product/customers/accounts/buyers/{name}/calls/transcripts/
 ```
 
 ## Step 1.5: Granola Connectivity Check
 
-**If the user indicates the transcript is in Granola**, run a connectivity check before proceeding:
+If the user indicates the transcript is in Granola, run a connectivity check before proceeding:
 
 1. Call `mcp__granola__list_meetings` with `time_range: "this_week"` as a test
 2. If it fails or times out, tell the user: "Granola MCP isn't connected. Check that the Granola plugin is running, then try again. In the meantime, you can paste the transcript or provide a file path."
@@ -41,25 +41,25 @@ Skip this check if the user pastes a transcript or provides a file path.
 
 ## Step 2: Check for Existing Customer Files
 
-**ALWAYS check both folders before creating new files:**
+**Always check both folders before creating new files:**
 
-1. Search `[product-area]/customer-calls/summaries/` for `[CustomerName].md`
-2. Search `[product-area]/customer-calls/transcripts/` for `[CustomerName].md`
+1. Search `accounts/{type}/{name}/calls/summaries/` for prior summaries
+2. Search `accounts/{type}/{name}/calls/transcripts/` for prior transcripts
 
 **If files exist:**
-- Review existing Open Action Items
+- Review existing Open Action Items in the account-context.md
 - Ask user about any items where status is unclear (e.g., "Was [action item] completed?")
-- Append the new meeting to both files (at the top, reverse chronological order)
+- Save the new meeting as a new dated file (one per meeting, not appended)
 
-**If no files exist:** Create new files for this customer in both folders
+**If no files exist:** Create the customer's account folder and the standard subfolders (`calls/summaries/`, `calls/transcripts/`, plus `account-context.md`).
 
 ## Step 3: Gather Information
 
 Ask the user for:
-- **Customer name**: The name of the customer/company
-- **Meeting title**: Title of the meeting
-- **Meeting date**: Date in MM/DD/YY format
-- **Meeting participants**: List of attendees
+- **Customer name** (supplier name or buyer/dealer name)
+- **Meeting title**
+- **Meeting date** (YYYY-MM-DD)
+- **Meeting participants**
 - **Transcript source**: Either:
   - "I'll provide the transcript" (user will paste it)
   - "It's in Granola" (search Granola for the meeting)
@@ -69,179 +69,57 @@ Ask the user for:
 
 1. Get the transcript content from the source
 2. Read the summary style guide: `.claude/skills/customer-call-summary/SKILL.md`
-3. Review the example for expected level of detail: `.claude/skills/customer-call-summary/examples/acme-01-27-26.md`
-4. Generate the **summary content** for this meeting. This is the analytical work - extract insights, identify feature requests, draft the narrative. Include:
+3. Generate the **summary content** following the SKILL guide. Include:
    - Executive Summary (with inline quotes, topic headers, opportunity areas, key product gaps)
    - Insights / Learnings (organized by topic, table format with quotes)
    - Feature Requests (organized by area, table format with quotes)
    - Next Steps (organized by category with owners)
    - Follow-up Email draft
-5. Also prepare a **bullet list of feature requests** for the tracker update (customer name, feature name, context, which section of feature-requests.md they belong in)
-6. Also prepare **updated action item tables** if this is an existing file (which items to move to completed, which new items to add)
-7. Run through the Quality Checklist from SKILL.md before proceeding
+   - Slack summary draft
+4. Run through the Quality Checklist from SKILL.md before proceeding
 
-**IMPORTANT:** Do NOT try to generate the complete file-ready markdown in this step. Generate the summary content in sections. Agent 1 will handle assembling the final file structure.
+## Step 5: Write Files
 
-## Step 5: Write Files and Update Tracker
+### 5a. Write Summary File
 
-The main agent writes the summary and transcript files directly. Only the feature requests update is delegated to a background Task agent.
+Save the summary to `product-development/product/customers/accounts/{type}/{name}/calls/summaries/{YYYY-MM-DD}.md`.
 
-**Why no Task agents for file writing:** Task agents add startup and context-loading overhead that makes them slower than the main agent for pure write operations. The main agent already has the content - writing directly is faster.
+Each meeting is its own file. Cross-reference the transcript at the top of the summary.
 
-### 5a. Write Summary File (Main Agent)
+### 5b. Write Transcript File
 
-Write the summary file directly using the Write tool.
+Save the transcript to `product-development/product/customers/accounts/{type}/{name}/calls/transcripts/{YYYY-MM-DD}.md`. Cross-reference the summary at the top.
 
-1. Assemble the complete file content by combining:
-   - The `# [CustomerName] - Meeting Summaries` heading
-   - The updated action item tables (from Step 4)
-   - The `---` separator
-   - The new meeting heading: `# MM/DD/YY - [Meeting Title]`
-   - Metadata block (Date, Participants, Transcript cross-reference link)
-   - The summary content sections from Step 4
-   - If existing file: the `---` separator and all previous meetings from the existing file
-2. Write the assembled content to `[product-area]/customer-calls/summaries/[CustomerName].md`
-3. Keep all lines under 150 characters
+For large transcripts (>15KB), write the header via the Write tool and append the body via Python's `open(file, "a")` with triple-quoted strings (handles all special characters cleanly).
 
-### 5b. Write Transcript File (Main Agent via Bash)
+### 5c. Update account-context.md
 
-**Use the Write tool for the header, then Bash/Python for the transcript body.** Never pass large transcript content through the Write tool or a Task agent.
+Update the customer's `account-context.md` with:
+- New insights from this call
+- Updated open / completed action items
+- Any change in status, blockers, or next steps
 
-**IMPORTANT:** Never use Bash heredocs for the header. The `**Date:**` line contains a colon-asterisk (`:*`) that Claude Code's settings parser interprets as a glob pattern when the command gets saved as a permission rule, which corrupts `settings.local.json`.
+### 5d. Log Feature Requests
 
-**For pasted text transcripts (Write tool + Python chunked approach):**
-1. Write the header to the target file via the **Write tool** (not a Bash heredoc)
-2. Append the transcript body using `python3 << 'PYEOF'` with Python's `open(file, "a")` and triple-quoted strings
-3. For transcripts over ~15KB, split into 2-4 chunks (each chunk is a separate `python3` call that appends)
-4. If appending to existing file: add separator + existing meetings after the transcript
-5. Run wrap script
+For each feature request surfaced in the call, file a Jira ticket in the `FRT` project with:
+- Customer label (`buyer:{name}` or `supplier:{name}`)
+- Pillar label (`pillar:buyer`, `pillar:supplier`, or `pillar:operations`)
+- Link back to the call summary
 
-**For .md file source transcripts:**
-1. Write the header to a temp file
-2. Append transcript content from the source file (using `tail` to skip the source file's header)
-3. Add separator + existing meetings (if any)
-4. Move into place
-5. Run wrap script
+## Step 6: Present Slack Summary Draft
 
-```bash
-# === PASTED TEXT: Write tool + Python chunked approach ===
-# Step 1: Write header using the Write tool (NOT Bash heredoc)
-# Use the Write tool to create the file with the header content:
-#   # [CustomerName] - Meeting Transcripts
-#
-#   # MM/DD/YY - [Meeting Title]
-#
-#   **Date:** [Full date]
-#   **Participants:** [Comma-separated list]
-#   **Granola Meeting ID:** [id, only include this line if source is Granola]
-#   **Summary:** [View summary](../summaries/[CustomerName].md#mmddyy---meeting-title)
-#
-#   **Transcript:**
+Present the Slack summary draft to the user for review. Format follows the Slack Summary section in `.claude/skills/customer-call-summary/SKILL.md`.
 
-# Step 2: Append transcript body via Python (handles all special chars)
-python3 << 'PYEOF'
-transcript = """[transcript chunk 1 here - aim for ~15KB per chunk]"""
-with open("[target-transcript-file]", "a") as f:
-    f.write(transcript)
-PYEOF
-
-# Step 3: For large transcripts (30KB+), repeat with additional chunks
-python3 << 'PYEOF'
-transcript = """[transcript chunk 2 here]"""
-with open("[target-transcript-file]", "a") as f:
-    f.write(transcript)
-PYEOF
-
-# Step 4: Run wrap script
-python3 scripts/wrap-transcript-lines.py --in-place "[target-transcript-file]"
-
-# === .MD FILE SOURCE: Bash concatenation ===
-TMPFILE=$(mktemp)
-# Write header to temp file (same HEADER heredoc as above)
-# Then: tail -n +7 "/path/to/source.md" >> "$TMPFILE"
-# Then: add separator + existing meetings if any
-# Then: mv "$TMPFILE" "[target-transcript-file]"
-# Then: run wrap script
-```
-
-### 5c. Update Feature Requests (Background Task Agent)
-
-Launch ONE Task agent **in the background** to update the feature requests tracker while the main agent continues.
-
-**Prompt the agent with:**
-- The list of feature requests identified in Step 4 (customer name, feature name, context, which section of feature-requests.md they belong in)
-- The target file: `product/customers/forge/feature-requests/feature-requests.md`
-
-**The agent should:**
-1. Read `product/customers/forge/feature-requests/feature-requests.md`
-2. For each feature request: add/update in the appropriate section
-3. Update Section 4 (customer index) with any new entries
-4. Update the "Last updated" date
-
-### After writing files
-
-- Verify both summary and transcript files exist and cross-reference links are correct
-- Verify anchor link format: lowercase, spaces become hyphens, special characters removed
-- Present a brief preview of key insights to the user
-
-## Step 6: Draft Slack Summary
-
-Present the Slack summary draft (prepared in Step 4) to the user for review. Follow the Slack Summary format in `.claude/skills/customer-call-summary/SKILL.md`, Section 6.
+Default channel: `#rem_tech_general` for cross-team awareness, `#rem_tech_internal` for sensitive customer detail.
 
 ## Important Notes
 
-### Level of Detail
-The summary should be detailed enough that someone who wasn't on the call understands the full picture. Include specific examples and context, capture the "why" behind insights, use real examples mentioned in the call, and note blockers and dependencies. See the example in the skill folder for the expected level of detail.
+### Anchor links
+- Use lowercase, spaces become hyphens, special characters removed
+- Example: heading `# 2026-05-08 — Discovery call` → anchor `#2026-05-08--discovery-call`
 
-### Action Item Management
-Action items tables live at the TOP of the summary file (before any meetings), split by Forge Labs and Customer ownership. Each meeting: review existing items, ask about unclear status, update tables, add new items. When moving to Completed, add the completion date. See SKILL.md for the table format.
-
-### Anchor Links
-- Standard markdown auto-generates anchors from heading text
-- Anchor format: lowercase, spaces become hyphens, special characters removed
-- Example heading: `# 12/04/25 - Bi-Weekly Check-in`
-- Auto-generated anchor: `#120425---bi-weekly-check-in`
-- Links use: `[View transcript](../transcripts/CustomerName.md#120425---bi-weekly-check-in)`
-
-### Large Transcript Handling
-Pasted transcripts over ~30KB will fail with both the Write tool (output token timeout) and Bash heredocs (shell-hostile characters like single quotes, backticks, dollar signs). Use the Python chunked approach instead:
-- Write the header via a small Bash heredoc (always safe)
-- Append transcript body via `python3 << 'PYEOF'` with triple-quoted strings
-- Split into 2-4 chunks (~15KB each) to stay under timeout thresholds
-- The quoted `'PYEOF'` delimiter disables shell expansion, and Python triple-quoted strings handle all special characters
+### Line length
+- Keep lines under 150 chars to avoid processing issues — wrap long speaker turns at sentence boundaries
 
 ### Granola Meeting ID
-When the transcript source is Granola, include a `**Granola Meeting ID:** [uuid]` line in the transcript header, after `**Participants:**`. Omit this line entirely when the source is pasted text or a file.
-
-### File Organization
-- **Summaries** go in `summaries/` subfolder
-- **Transcripts** go in `transcripts/` subfolder
-- Each customer has ONE summary file and ONE transcript file (with multiple meetings inside)
-- Meetings are in reverse chronological order (newest first)
-- Use `---` as separator between meetings
-
-### Adding to Existing Files
-When appending to existing files:
-1. Read the existing file first
-2. Update action items tables at the top
-3. Insert the new meeting section after the action items (before previous meetings)
-4. Preserve all existing content below
-
-### Line Length Limits
-**IMPORTANT:** Keep all lines under 150 characters to prevent processing issues. When writing transcripts, wrap long speaker turns at natural sentence/clause breaks. Use 4-space indentation for continuation lines within a speaker turn.
-
-## Execution Steps
-
-1. Confirm product area with user
-2. Check for existing customer files in both summaries/ and transcripts/ folders
-3. If existing files: review Open Action Items, ask user about unclear status
-4. Gather meeting information
-5. Get transcript content
-6. Read summary skill guidelines and example
-7. Generate summary content (sections), feature request list, and action item updates
-8. Launch background Task agent for feature requests update
-9. Write summary file directly (Write tool)
-10. Write transcript file directly (Bash concatenation + wrap script)
-11. Verify files exist and cross-reference links are correct
-12. Check that feature requests agent completed
-13. Generate and present Slack summary draft for user review
+- When source is Granola, include `**Granola Meeting ID:** {uuid}` in the transcript header so we can re-pull or audit later

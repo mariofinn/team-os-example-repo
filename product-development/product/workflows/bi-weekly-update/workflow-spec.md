@@ -2,7 +2,7 @@
 
 ## Overview
 
-This workflow produces a dated bi-weekly Forge update document. It runs interactively: each step has an automated part (data gathering, drafting) and an interactive part (the PM reviews, adds context, approves). Each section is written to the output file as it completes so progress is visible in real time. The final step auto-pushes the compiled document to a Google Doc via the Google Workspace MCP.
+This workflow produces a dated bi-weekly Remarketing Tech review document. It runs interactively: each step has an automated part (data gathering, drafting) and an interactive part (the PM reviews, adds context, approves). Each section is written to the output file as it completes so progress is visible in real time. The final step auto-pushes the compiled document to a Google Doc via the Google Workspace MCP.
 
 ---
 
@@ -24,14 +24,14 @@ Each step reads its own instruction file (`step-1-eng-status.md`, etc.) for deta
 ## What Changes Every Cycle vs. What's Stable
 
 ### Changes every cycle
-- **Eng status:** Workstream statuses update based on Linear / Jira / Asana + PM's context dump
+- **Eng status:** Workstream statuses update based on Jira `FRT` + PM's context dump
 - **Customer calls section:** Completely rewritten each cycle based on last 2 weeks of calls
 - **What We're Hearing / Highlights:** Completely rewritten based on new call data
 - **Pilot/customer exec summaries:** Updated only if new call data changes the narrative
 
 ### Stable across cycles (carried forward, not rewritten)
-- **OKR structure and goals:** Updated only when OKRs change (quarterly)
-- **Customer deep dive background sections:** Only updated when materially new info emerges
+- **OKR structure and goals:** Updated only when OKRs change (per trimester — see `okrs-t1-2026.md`, `okrs-t2-2026.md`)
+- **Customer deep-dive background sections:** Only updated when materially new info emerges
 - **Cross-customer summary:** Updated when shared gaps change or new customers are added
 - **Table of Contents structure:** Updated when sections are added or removed
 
@@ -41,62 +41,41 @@ Each step reads its own instruction file (`step-1-eng-status.md`, etc.) for deta
 
 ### Formatting
 - Business-goal-led headings (not feature-led)
-- Customer quotes: *"Quote text."* - Speaker Name
-- No em dashes in body text
+- Customer quotes: *"Quote text."* — Speaker Name
+- No em dashes in body text (use commas, semicolons, or sentence breaks)
 - No horizontal rules between sections
 - Tables and bullets for scannable content; paragraphs for narrative
 
 ### Customer Categorization
 Each customer in the call synthesis table gets one of these categories:
-- **Paying customer** - signed and paying
-- **Pilot** - active pilot, not yet paying
-- **Pipeline** - in pipeline, being pitched
-- **Free tier** - on free plan, potential upsell
 
-### Date Ranges
-- Each cycle covers exactly 2 weeks
-- Date format for section headers: "Month DD - Month DD" (e.g., "Jan 28 - Feb 11")
-- Date format for customer table: MM/DD (e.g., 02/10)
+| Category | Definition |
+|----------|------------|
+| Supplier — pilot | Active RaaS supplier pilot |
+| Supplier — discovery | RaaS prospect in discovery / scoping |
+| Buyer — active | Active B2B dealer / trade buyer using FINN's buyer product |
+| Buyer — pilot | Buyer in pilot / onboarding |
+| Buyer — pipeline | Buyer in sales pipeline, not yet onboarded |
+| Internal | Internal Remarketing ops stakeholder (not a customer per se but worth tracking) |
 
----
+### Output File Header
 
-## Handling Special Cases
+```markdown
+# Remarketing Tech Bi-Weekly Review — {YYYY-MM-DD}
 
-### New customers (first call)
-- Add to customer table with appropriate category
-- If they become a pilot, create a new pilot section with exec summary and deep dive
-- Ask PM: "Should we add a pilot section for [customer]?"
-
-### New pilots
-- Create exec summary and deep dive following existing pilot format
-- Add to cross-customer summary if they share gaps with existing pilots
-- Add to Table of Contents
-
-### Ad-hoc requests
-Sometimes the bi-weekly includes one-off content (competitive analysis, strategic memos, etc.). These are handled inline during Step 5 (Review) when the PM can request additions.
-
-### Removing stale content
-If a customer hasn't been discussed in 2+ cycles, ask PM: "Should we keep [customer] pilot section, or archive it?"
+**Period:** {start_date} → {end_date}
+**Compiled by:** Mario Schiefer
+**Audience:** Remarketing leadership + cross-functional partners
+```
 
 ---
 
-## File Naming
+## Configuration
 
-- Output files: `YYYY-MM-DD.md` (date of the bi-weekly meeting)
-- Location: `product/meetings/team-bi-weekly/docs/YYYY-MM-DD.md`
+The workflow keeps the following references stable across runs:
 
----
-
-## Google Doc Auto-Push
-
-Step 4 automatically pushes the compiled update to a Google Doc using the Google Workspace MCP (`mcp__google_workspace__*` tools). This eliminates manual copy-paste and ensures the shared doc is always in sync with the source markdown. See `step-4-push-to-gdoc.md` for details.
-
----
-
-## Reference
-
-See `reference/2026-02-11.md` for the canonical example of what good output looks like. This was the first bi-weekly produced with this workflow and covers:
-- OKR tables with workstream status
-- 5 customer calls synthesized with thematic analysis
-- Cross-customer summary for Meridian and CloudKitchen
-- Full exec summaries and deep dives for active pilots
+- Jira project key: `FRT`, board 245
+- OKR file pointer: latest `okrs-tN-YYYY.md` under `../../strategy/`
+- Customer accounts root: `../../customers/accounts/`
+- Output dir: `../../meetings/team-bi-weekly/docs/`
+- Google Doc target: stored in workflow config (a single rolling doc by default)

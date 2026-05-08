@@ -1,6 +1,6 @@
 # Onboarding: Design
 
-Design-specific setup and orientation for designers joining Forge.
+Design-specific setup and orientation for designers joining FINN Remarketing Tech.
 
 ## Setup
 
@@ -12,59 +12,54 @@ See [General Onboarding](onboarding-general.md#shared-tools-everyone-gets-these)
 
 | Tool | Purpose | Access |
 |------|---------|--------|
-| Figma | Design files (edit access) | `Forge Labs` workspace - request edit from Emily Zhao |
-| Amplitude | Product analytics for design decisions | Request access from Grace Lin |
-| Maze | Usability testing | Team license - request from manager |
+| Figma | Design files (edit access) | FINN workspace — request edit from Iryna Lysenko |
+| Amplitude | Product analytics for design decisions | Request access from Victor Franz |
+| Looker | Looker dashboards for KPI context | Request access from Victor Franz |
 
 ### Repos
 
 | Repo | Why |
 |------|-----|
-| `forge-product` | PRDs, design patterns, component library docs |
-| `forge-app` | Understand frontend implementation of designs |
+| `finn-auto/team-os-example-repo` | PRDs, design context, customer research |
+| Pillar app repos | Skim to understand how designs are implemented |
 
 ### Environment Setup
 
 1. Complete [General Onboarding](onboarding-general.md) setup first
-2. Get Figma edit access and explore the `Forge Labs` workspace
-3. Review the [design patterns and component library](../product/PRDs/forge/design-patterns/CLAUDE.md)
-4. Get Amplitude access for usage data context
+2. Get Figma edit access and explore the FINN Remarketing files (buyer portal, supplier portal)
+3. Read the active PRDs to understand current product priorities
+4. Get Amplitude / Looker access for usage data context
 
 ## Key Documents
 
-- [Design Patterns](../product/PRDs/forge/design-patterns/CLAUDE.md) - components, copy library, screen inventory
-- [Frontend CLAUDE.md](../frontend/CLAUDE.md) - dev conventions and design system implementation
-- [Product CLAUDE.md](../product/CLAUDE.md) - product context, pillars, user segments
-- [Customer Insights](../product/customers/forge/CLAUDE.md) - user research, verbatims
+- [Product CLAUDE.md](../../product-development/product/CLAUDE.md) — pillars, terminology
+- [PRDs](../../product-development/product/PRDs/CLAUDE.md) — current feature specs with design context
+- [Customer Research](../../product-development/product/customers/CLAUDE.md) — buyer + supplier research, verbatims
+- [Design CLAUDE.md](../../product-development/design/CLAUDE.md)
 
 ## Slack Channels
 
 | Channel | Purpose |
 |---------|---------|
-| `#forge-design` | Design reviews, feedback, design system updates |
-| `#forge-product` | Product discussions, customer feedback |
-| `#forge-general` | Team-wide announcements |
-| `#forge-eng` | Stay close to implementation discussions |
+| `#rem_tech_general` | Team-wide announcements |
+| `#rem_tech_internal` | Internal team discussions |
+
+Plus FINN-wide design channels — Iryna will point you to the right ones.
 
 ## People to Meet
 
 | Person | Why |
 |--------|-----|
-| Taylor Brooks | Design peer - current design system, review process |
-| Jamie Ortiz | Design peer - component patterns, interaction design |
-| Emily Zhao | Design system lead |
-| Hannah Stulberg | PM - product priorities and roadmap |
-| Sam Chen | Eng peer - frontend implementation partner |
-
-## Org Chart
-
-Design partners closely with Product and Engineering. Design peers: Taylor Brooks, Jamie Ortiz. Primary PM partner: Hannah Stulberg. Frontend eng partners: Sam Chen, Jordan Kim.
+| Iryna Lysenko | Principal Designer — design system, review process |
+| Daria Khitrina | Associate Designer — design peer |
+| Mario Schiefer | PM partner — product priorities, roadmap |
+| Marco Milovanovic | EM — engineering implementation partner |
 
 ## First Tasks
 
-- [ ] Explore the Figma workspace and review the design system file
-- [ ] Read the design patterns doc and screen inventory
-- [ ] Review 2-3 recent PRDs to understand how design specs are structured
-- [ ] Meet with Taylor and Jamie for design system walkthrough
+- [ ] Explore the Figma workspace and review the buyer + supplier portal design files
+- [ ] Read 2–3 recent PRDs to understand how design specs are structured here
+- [ ] Read the [supplier discovery research](../../product-development/product/customers/research/supplier-discovery-synthesis.md) and [buyer portal context](../../product-development/product/customers/research/buyer-portal-context.md)
+- [ ] Meet with Iryna and Daria for design system walkthrough
 - [ ] Shadow a design review session
-- [ ] Pick up a small design task (your manager will assign one)
+- [ ] Pick up a small design task from Jira `FRT` (Iryna or Mario will assign one)

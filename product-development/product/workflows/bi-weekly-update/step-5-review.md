@@ -16,11 +16,11 @@ Read the complete dated output file and present a summary of what's included:
 - Number of sections
 - Any sections that were carried forward unchanged
 - Any sections that were updated or newly created
-- Confirmation that Google Doc push succeeded (from Step 4)
+- Confirmation that the Google Doc push succeeded (from Step 4)
 
 ### 2. Ask for revisions
 
-Prompt: **"Any sections to revise? Any ad-hoc content to add (competitive analysis, strategic notes, etc.)?"**
+Prompt: **"Any sections to revise? Any ad-hoc content to add (competitive notes, strategic memos, leadership pre-briefs)?"**
 
 If the PM requests changes:
 - Make the edits in the markdown file
@@ -29,12 +29,10 @@ If the PM requests changes:
 
 ### 3. Final review checklist
 
-Walk through the quality checklist before sign-off:
-
-- [ ] **Accuracy:** All workstream statuses reflect reality (not just Linear / Jira / Asana)
+- [ ] **Accuracy:** All workstream statuses reflect reality (not just Jira)
 - [ ] **Framing:** Headlines are business-goal-led, not feature-led
 - [ ] **Quotes:** All customer quotes are verbatim with correct attribution
-- [ ] **Categories:** All customers correctly categorized (Paying/Pilot/Pipeline/Free tier)
+- [ ] **Categories:** All customers correctly categorized (supplier/buyer + sub-status)
 - [ ] **Completeness:** No calls or significant developments missing
 - [ ] **Actionability:** Highlights are strategic and actionable for leadership
 - [ ] **Formatting:** Tables render correctly, no broken markdown
@@ -51,9 +49,9 @@ If approved:
 ### 5. Post-meeting: save transcript
 
 After the bi-weekly meeting, process the meeting transcript:
-- Save transcript to `product/meetings/team-bi-weekly/transcripts/YYYY-MM-DD.md`
-- Save summary to `product/meetings/team-bi-weekly/summaries/YYYY-MM-DD.md`
-- Extract action items and flag any that need Linear / Jira / Asana issues
+- Save transcript to `../../meetings/team-bi-weekly/transcripts/{YYYY-MM-DD}.md`
+- Save summary to `../../meetings/team-bi-weekly/summaries/{YYYY-MM-DD}.md`
+- Extract action items and flag any that need Jira `FRT` tickets
 
 ---
 
@@ -61,5 +59,5 @@ After the bi-weekly meeting, process the meeting transcript:
 
 - The Google Doc is the final shared version. The markdown file is the working copy and historical archive.
 - If the PM wants to skip Google Doc push and transfer content manually, that's fine. The markdown file is always the canonical source.
-- The published file in `product/meetings/team-bi-weekly/docs/` serves as the historical record for future reference and trend analysis.
+- The published file in `../../meetings/team-bi-weekly/docs/` serves as the historical record for future reference and trend analysis.
 - Ad-hoc additions (competitive notes, strategic memos) should be clearly marked as one-off sections, not folded into the recurring structure.

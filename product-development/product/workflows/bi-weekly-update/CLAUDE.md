@@ -2,45 +2,37 @@
 
 ## Purpose
 
-Automated workflow that generates the bi-weekly product review document for Forge. This runs before each bi-weekly review meeting and compiles progress, metrics, and next steps into a presentation-ready format.
+Automated workflow that generates the bi-weekly Remarketing Tech review document. Runs before each bi-weekly review meeting and compiles engineering progress, customer call themes, and stakeholder updates into a presentation-ready format.
 
 ## What This Workflow Does
 
-1. **Compiles metrics** - Pulls key product health and adoption metrics from the business review
-4. **Generates the update doc** - Writes a structured bi-weekly review document to `product/meetings/team-bi-weekly/docs/`
+1. **Pulls engineering status** from Jira (`FRT` board) + PM context dump
+2. **Synthesizes recent customer calls** from `product-development/product/customers/accounts/*/calls/summaries/`
+3. **Updates customer/pilot exec summaries** if new call data changes the narrative
+4. **Pushes the compiled doc** to the bi-weekly Google Doc via the Google Workspace MCP
+5. **PM reviews and finalizes** before the meeting
 
 ## Steps Overview
 
-1. Summarize key metrics and trends
-5. Flag blockers or items needing discussion
-6. Write the output doc with the standard template
+Each step has its own instruction file (`step-1-eng-status.md`, etc.) with detail.
 
-## Output Format
+1. Pull eng status by OKR / pillar — writes "What the Team Is Building Now"
+2. Customer call synthesis — writes "Customer Calls" section
+3. Customer / pilot updates — refreshes per-account exec summaries
+4. Push to Google Doc
+5. PM review and sign-off
 
-The generated doc follows this structure:
+## Output Location
 
-```
-# Forge Bi-Weekly Review - [Date]
+`product-development/product/meetings/team-bi-weekly/docs/{YYYY-MM-DD}-bi-weekly-review.md`
 
-## Highlights
-- Top 3-5 accomplishments from the last two weeks
+## Source-of-truth files this workflow reads
 
-## Workstream Updates
-- Table of active workstreams with status, progress notes, and next steps
-
-## Launches
-- Features shipped since last review
-
-## Metrics Snapshot
-- Key product health numbers
-
-## Discussion Items
-- Blockers, decisions needed, or topics for group discussion
-
-## Next Two Weeks
-- P0 priorities for the upcoming sprint
-```
+- Jira `FRT` (board 245) — completed and in-progress tickets
+- [Current OKRs](../../strategy/okrs-t2-2026.md) — workstream structure
+- `product-development/product/customers/accounts/{type}/{name}/calls/summaries/` — recent customer calls
+- The previous bi-weekly review doc (carry-forward content)
 
 ## File Naming
 
-Output files follow the convention: `YYYY-MM-DD-forge-bi-weekly-review.md`
+Output files: `{YYYY-MM-DD}-bi-weekly-review.md`
