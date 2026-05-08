@@ -33,4 +33,30 @@
 #       related_research:
 #         - product-development/product/{suppliers,buyers}/research/{file}.md
 
-features: []
+features:
+  - id: separate-deductible-invoicing
+    name: "Separate Deductible Invoicing"
+    pillar: supplier
+    status: in-progress
+    owner_pm: "Mario Schiefer"
+    owner_eng: "Ana Costa"
+    prd: product-development/product/PRDs/supplier/separate-deductible-invoicing-prd.md
+    rfc: product-development/engineering/rfcs/supplier/separate-deductible-invoicing-rfc.md
+    jira:
+      - FRT-1986
+      - FRT-1987
+      - FRT-1988
+      - FRT-1989
+      - FRT-1990
+    confluence:
+      - https://finn.atlassian.net/wiki/spaces/FP/pages/4824694814/PRD+Separate+Deductible+Invoicing
+      - https://finn.atlassian.net/wiki/spaces/FP/pages/4828463224/Design+Separate+Deductible+Invoicing
+
+  - id: raas-negotiation-flow
+    name: "RaaS Negotiation Flow — Bid Routing & Display Logic"
+    pillar: supplier
+    status: design
+    owner_pm: "Mario Schiefer"
+    prd: product-development/product/PRDs/supplier/raas-negotiation-flow-prd.md
+    confluence:
+      - https://finn.atlassian.net/wiki/spaces/FP/pages/4853661823/PRD+RaaS+Negotiation+Flow+Bid+Routing+Display+Logic
