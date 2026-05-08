@@ -25,6 +25,8 @@ Defines how buyer bids are collected, filtered, forwarded to suppliers, and how 
 
 ## 2. Process Diagram
 
+Rendered PNG: [`images/raas-negotiation-flow.png`](images/raas-negotiation-flow.png) (kept in sync with the Mermaid source below).
+
 ```mermaid
 flowchart TD
 
